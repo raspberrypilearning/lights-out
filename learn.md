@@ -1,7 +1,6 @@
-By creating a something with your Raspberry Pi you will learn:
+By creating this project with your Raspberry Pi you will learn:
 
-- How to set up a Raspberry Pi camera
-- How to use GPIO pins
-- How to create a circuit on a breadboard
-- Controlling GPIO pins with Python code
-- Controlling the camera module with Python code
+- How to control lights on the Explorer HAT
+- How to detect when a button is pressed and which button was pressed
+- How to generate random numbers
+- How to start and stop a timer using Python

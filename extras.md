@@ -1,4 +1,3 @@
 You'll also need:
 
-- Blu tack
-- Scissors
+- Explorer HAT addon board

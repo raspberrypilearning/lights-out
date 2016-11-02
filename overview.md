@@ -1,1 +1,1 @@
-In this resource you will make a something do a something so that your something can do something and use something to control the something.
+In this resource you can find out how to make a fast paced fun reaction game using the Explorer HAT. The zombies are coming - can you turn the lights off quick enough? 
