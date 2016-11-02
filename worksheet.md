@@ -4,11 +4,9 @@ In this resource you can find out how to make a fast paced fun reaction game usi
 
 ## Setting up the Explorer HAT
 
-First you will need to connect the Explorer HAT to your Raspberry Pi
+**Before you start**, make sure your Raspberry Pi is powered down and switched off 
 
-1. **Before you start**, make sure your Raspberry Pi is powered down and switched off 
-
-2. Carefully mount the Explorer HAT to the GPIO pins on your Raspberry Pi, then boot up the Pi.
+2. Carefully mount the Explorer HAT onto the GPIO pins on your Raspberry Pi, then boot up the Pi.
 
 3. Open Python 3 from the applications menu, under **Programming**:
 
