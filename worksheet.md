@@ -45,7 +45,6 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
 * Which light is chosen to turn on
 * How long the Explorer HAT waits before turning the next light on
-* How long the user gets to press the button before they lose
 
 
 1. To generate random numbers you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. **Delete** all of the code beneath this where you experimented with turning the lights on and off.
@@ -84,34 +83,148 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
 ## Pressing the button
 
-1. You need to know when the player presses a button on the Explorer HAT, and which button it was that they pressed. At the bottom of your code, add this line:
+1. You need to know when the player presses a button on the Explorer HAT, and which button it was that they pressed. At the **bottom** of your code, add this line:
 
     ```python
     explorerhat.touch.pressed(button_pressed)
     ```
 
-2. When a button is pressed, the `button_pressed` function will be called, so we need to write this function. Put the following code at the start of your file, after the `import` statements:
+2. When a button is pressed, the `button_pressed` function will be called, so we need to write this function. Put the following code at the **start** of your file, after the `import` statements:
 
     ```python
-    def button_pressed(channel,event):
+    def button_pressed(channel, event):
         print("You pressed button " + str(channel) )
         explorerhat.light.off()
     ```
 
-    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed is displayed in the Python Shell.
+    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed is displayed in the Python Shell and all lights switch off.
 
     ![](images/pressed-button.png)
 
 
+## Lots of lights!
+1. Your program can choose and switch on a random light, and then switch it off when a button is pressed. Add a `game_in_progress` variable and a loop to your game so that lights keep being randomly chosen. 
+
+Your code so far should look like this:
+
+    ```python
+    import explorerhat
+    from time import sleep
+    import random
+
+    # The button_pressed function
+    def button_pressed(channel, event):
+        print("You pressed " + str(channel) )
+        explorerhat.light.off()
+
+    # Keep playing the game until game_in_progress becomes False
+    game_in_progress = True
+
+    while game_in_progress:
+
+        # Randomly choose the number of a light (1-4)
+        light = random.randint(1, 4)
+
+        # Choose how long to wait before turning on the light
+        wait_for_next = random.uniform(0.5, 3.5)
+        sleep(wait_for_next)
+
+        # Turn on the selected light
+        if light == 1:
+            explorerhat.light.blue.on()
+        elif light == 2:
+            explorerhat.light.yellow.on()
+        elif light == 3:
+            explorerhat.light.red.on()
+        elif light == 4:
+            explorerhat.light.green.on()
+
+        # When a button is pressed, call the button_pressed function
+        explorerhat.touch.pressed(button_pressed)
+
+    ```
+
+    Notice that at the moment pressing **any** button will turn the light off!
 
 ## Adding a timer
 
-Every time you turn a light on, the player is given a random length of time to press the button
+1. After you switch the light on, you need to start a timer. To do this, you will need to add another line of code with your `import` statements and  add `from time import time`. 
 
-1. 
+2. Now find the place in your program after you have turned a light on, but before the line of code dealing with the button being pressed. Create a variable called `start` to record the current time - this will be provided by your Raspberry Pi and is pretty accurate.
+
+    ```python
+    ...
+    elif light == 4:
+        explorerhat.light.green.on()
+
+    # Record the current time
+    start = time()
+     
+    ...   
+
+    ```
+
+3. You can choose how many seconds the player will have to press the button once a light is turned on. Add a **constant** to your program just after the `game_in_progress` variable with the value you have chosen. I chose to allow my player 1.5 seconds:
+
+
+    ```python
+    game_in_progress = True
+    TIME_ALLOWED = 1.5
+
+    ```
+
+    The smaller the number, the quicker the player will have to be!
+
+
+4. Now add a loop to keep checking whether the user has run over the amount of time they were allowed to take. You can think of the purpose of this loop like someone on a long car journey who keeps asking "are we nearly there yet?", "are we there now?", "how about now?"! :)
+
+    ```python
+    ...
+
+    # Record the current time
+    start = time()
+
+    waiting_for_press = True
+    while waiting_for_press and game_in_progress:
+
+        # What's the time now?
+        now = time()
+        time_taken = now - start
+
+        if time_taken > TIME_ALLOWED:
+            print("You took too long!")
+            explorerhat.light.off()
+            game_in_progress = False    
+          
+        else:
+            explorerhat.touch.pressed(button_pressed)
+
+
+    ```
+
+    Move the code for dealing with button presses to be part of the `else` - you will need to **indent** it to be in the right place. 
+
+5. If you run this code you will see that even if you press the right button extremely quickly, the program will still declare you to have taken too long. This is because the loop will keep checking until time is up, because you haven't told it to stop checking because a button was pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
+
+    ```python
+        def button_pressed(channel, event):
+            global waiting_for_press
+            waiting_for_press = False
+
+            print("You pressed " + str(channel) )
+            explorerhat.light.off()
+
+    ```
+
+    In this code, `global` allows us to change the value of the variable `waiting_for_press` from inside the function.
+
+
+## But was it the right button?
+
+
 
 ## Extensions
 * Add a streak counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game.
-
+* Change the amount of time the person has to turn the light off to be a random number
 
 
