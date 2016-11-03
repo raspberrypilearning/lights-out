@@ -12,11 +12,9 @@ In this resource you can find out how to make a fast paced fun reaction game usi
 
 ![](images/python3-app-menu.png)
 
-4. Check that your Explorer HAT is working by typing `import explorerhat` into the Python Shell. If everything is working you should see a message saying "Explorer HAT Pro detected". If not, check that you have [installed the software](software.md) correctly and connected your Explorer HAT to the GPIO pins.
+4. Create a new file by clicking `File > New File` and type in `import explorerhat` before pressing F5 to run your program.
 
-4. Create a new file by clicking `File > New File`
-
-5. In your file type
+If everything is working you should see a message saying "Explorer HAT Pro detected". If not, check that you have [installed the software](software.md) correctly and connected your Explorer HAT to the GPIO pins. 
 
 The Explorer HAT has touch buttons labelled 1-4, and four LED lights in different colours. The **aim of the game** is to code the Explorer HAT to randomly choose a light to turn on, and the user must press the corresponding button to turn the light off. If the player is too slow or if they press the wrong button, the game is over.  
 
