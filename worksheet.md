@@ -10,7 +10,7 @@ The Explorer HAT has touch buttons labelled 1-4, and four LED lights in differen
 
 1. Carefully mount the Explorer HAT onto the GPIO pins on your Raspberry Pi, then boot up the Pi.
 
-2. Open Python 3 from the applications menu, under **Programming**: ![](images/python3-app-menu.png)
+2. Open Python 3 from the applications menu, under **Programming**: ![Opening Python 3](images/python3-app-menu.png)
 
 3. Create a new file by clicking `File > New File` and type the code `import explorerhat` before pressing F5 to run your program.
 
@@ -99,7 +99,7 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
     The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed is displayed in the Python Shell and all lights switch off.
 
-    ![](images/pressed-button.png)
+    ![A message telling you which button was pressed](images/pressed-button.png)
 
 
 ## Lots of lights!
@@ -143,8 +143,8 @@ This would be a pretty easy game if the lights came on in the same order, for th
         explorerhat.touch.pressed(button_pressed)
 
     ```
-
-    ![Notice that at the moment pressing **any** button will turn the light off! That's not quite right but you will fix it later.](images/press-wrong-button.png)
+    Notice that at the moment pressing **any** button will turn the light off! That's not quite right but you will fix it later.
+    ![You can press any button to turn the light off](images/press-wrong-button.png)
 
 ## Adding a timer
 
