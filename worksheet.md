@@ -96,6 +96,7 @@ This would be a pretty easy game if the lights came on in the same order, for th
     def button_pressed(channel,event):
         print("You pressed button " + str(channel) )
         explorerhat.light.off()
+    ```
 
     The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed is displayed in the Python Shell.
 
