@@ -66,5 +66,18 @@ elif light == 2:
     explorerhat.light.yellow.on()
 ```
 
-3. Run your program several times to see that each time the program runs, a different light is randomly chosen and lights up immediately. We want the 
+Run your program several times to check that each time the program runs, a different light is randomly chosen and lights up immediately. 
+
+3. To make the game more fun, there needs to be an unpredictable gap between the lights, so we will add some code to wait a random length of time before turning on the next light:
+
+Underneath the code where you chose which light to turn on, add a new line of code:
+
+```python
+light = random.randint(1,4)
+wait_for_next = random.uniform(0.5, 3.5)
+```
+This time we are using the `random.uniform` function which allows us to choose decimal numbers. In the code above, the gap between the lights will be anything between half a second (0.5) and 3 and a half seconds (3.5). You can change these values if you want to be more (or less) mean to your player!
+
+
+
 
