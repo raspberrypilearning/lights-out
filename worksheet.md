@@ -55,7 +55,7 @@ This would be a pretty easy game if the lights came on in the same order, for th
     light = random.randint(1,4)
     ```
 
-    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`. We are choosing lights by number rather than colour because later on you will need to test whether the user pressed the corresponding numbered button.
+    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`. 
 
 3. Now add some code to turn the right light on depending on which number was randomly chosen. Can you **finish off the rest of the code** - 3 is the red light and 4 is the green light:
 
@@ -68,14 +68,14 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
     Run your program several times to check that each time the program runs, a different light is randomly chosen and lights up immediately. 
 
-4. To make the game more fun, there needs to be an unpredictable gap between the lights, so you will add some code to wait a random length of time before turning on the next light:
+4. To make the game more fun, there needs to be an unpredictable gap between the lights turning on, so let's add some code to wait a random length of time before turning on the next light:
 
     Underneath the code where you chose which light to turn on, add two new lines of code:
 
     ```python
-    light = random.randint(1,4)
+    light = random.randint(1,4)     
+    
     wait_for_next = random.uniform(0.5, 3.5)
-
     sleep(wait_for_next)
     ```
     This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and 3 and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
@@ -144,21 +144,23 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
     ```
 
-    Notice that at the moment pressing **any** button will turn the light off!
+    ![Notice that at the moment pressing **any** button will turn the light off! That's not quite right but you will fix it later.](images/press-wrong-button.png)
 
 ## Adding a timer
 
-1. After you switch a light on, you need to start a timer. Firstly, you will need to add another line of code next to your `import` statements. Find the right place and add `from time import time`.
+After you switch a light on, you need to start a timer and check how long the player takes to press the button. 
 
-2. Now find the place in your program after you have turned a light on, but before the line of code dealing with the button being pressed. Create a variable called `start` to record the current time - this will be provided by your Raspberry Pi and is pretty accurate.
+1. Firstly, you will need to tell Python to import the time function. Next to your other `import` statements, add the line `from time import time` to tell Python you want to use the `time` function.
+
+2. Go to the place in your program just before the line of code checking for the button being pressed. Create a variable called `start` to record the current time - this will be provided by your Raspberry Pi and is pretty accurate.
 
     ```python
-    ...
+    # ...other code above
 
     # Record the current time
     start = time()
      
-    ...   
+    # ... other code below
 
     ```
 
@@ -189,10 +191,11 @@ This would be a pretty easy game if the lights came on in the same order, for th
         now = time()
         time_taken = now - start
 
+        # Check if they have taken more time than they were allowed
         if time_taken > TIME_ALLOWED:
             print("You took too long!")
             explorerhat.light.off()
-            game_in_progress = False    
+            game_in_progress = False    # Lose the game
           
         else:
             explorerhat.touch.pressed(button_pressed)
@@ -202,7 +205,7 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
     Move the code for dealing with button presses to be part of the `else` - you will need to **indent** it to be in the right place. 
 
-5. If you run this code you will see that even if you press the right button extremely quickly, the program will still declare you to have taken too long. This is because the loop will keep checking until time is up, because you haven't told it to stop checking when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
+5. If you run this code you will see that even if you press the right button extremely quickly, the program will still declare you to have taken too long. This is because you haven't told the game to stop checking if time is up when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
 
     ```python
         def button_pressed(channel, event):
@@ -219,27 +222,32 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
 
 ## But was it the right button?
-1. The final part of our game is to check if the button the player pressed was in fact the right button. To do this you need to edit your `button_pressed` function again. At the start of the function (just below the `def` line) Compare the variable `light` (the number of the chosen light) to the variable `channel` (the number of the button pressed):
+The final part of our game is to check if the button the player pressed was in fact the right button. To do this you need to edit your `button_pressed` function again. At the start of the function, add code to check whether the variable `light` (the number of the chosen light) is equal to the variable `channel` (the number of the button pressed):
 
-    ```python
+```python
+def button_pressed(channel, event):
     if light == channel:
         print("Well done")
     else:
         print("Wrong button")
         global game_in_progress
         game_in_progress = False
-    ```
+```
 
-    Once again, you will need to tell Python that you want to change the value of the variable game_in_progress from inside the function by using the word `global`.
+Once again, you will need to tell Python that you want to change the value of the variable game_in_progress from inside the function by using the word `global`.
+
+![The game should now detect whether the right button was pressed](images/press-right-button.png)
 
 
 That's it! Now test your game with your friends.
 
 
-## Extensions
-* Add a streak counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game.
-* Change the amount of time the person has to turn the light off to be a random number
-* Allow the user to choose a difficulty level from 1-4 and alter the time they are allowed depending on the difficulty level they chose
+## What next?
+* Change the messages the player receives when they press the right or wrong button
+* Allow the player to play again if they lose, without having to press F5 to run the program again
+* Add a 'streak' counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game.
+* Change the amount of time the person has to turn the light off to be a random chosen number
+* Allow the user to choose a difficulty level, and alter the time they are allowed depending on the difficulty level they chose
 * Change your game to use the capacitive touch inputs on the Explorer HAT (5-8) so that instead of pressing the buttons the user might have to press a banana, marshmallow, jelly baby or other interesting conductive physical objects!
 
 
