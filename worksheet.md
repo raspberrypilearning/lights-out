@@ -234,7 +234,7 @@ def button_pressed(channel, event):
         game_in_progress = False
 ```
 
-Once again, you will need to tell Python that you want to change the value of the variable game_in_progress from inside the function by using the word `global`.
+Once again, you will need to tell Python that you want to change the value of the variable `game_in_progress` from inside the function by using the word `global`.
 
 ![The game should now detect whether the right button was pressed](images/press-right-button.png)
 
