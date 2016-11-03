@@ -75,8 +75,12 @@ Underneath the code where you chose which light to turn on, add a new line of co
 ```python
 light = random.randint(1,4)
 wait_for_next = random.uniform(0.5, 3.5)
+
+sleep(wait_for_next)
 ```
-This time we are using the `random.uniform` function which allows us to choose decimal numbers. In the code above, the gap between the lights will be anything between half a second (0.5) and 3 and a half seconds (3.5). You can change these values if you want to be more (or less) mean to your player!
+This time we are using the `random.uniform` function which allows us to choose decimal numbers. In the code above, Pytho chooses a number which could be anything between half a second (0.5) and 3 and a half seconds (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
+
+## 
 
 
 
