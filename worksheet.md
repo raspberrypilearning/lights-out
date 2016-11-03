@@ -6,13 +6,13 @@ In this resource you can find out how to make a fast paced fun reaction game usi
 
 **Before you start**, make sure your Raspberry Pi is powered down and switched off 
 
-2. Carefully mount the Explorer HAT onto the GPIO pins on your Raspberry Pi, then boot up the Pi.
+1. Carefully mount the Explorer HAT onto the GPIO pins on your Raspberry Pi, then boot up the Pi.
 
-3. Open Python 3 from the applications menu, under **Programming**:
+2. Open Python 3 from the applications menu, under **Programming**:
 
 ![](images/python3-app-menu.png)
 
-4. Create a new file by clicking `File > New File` and type in `import explorerhat` before pressing F5 to run your program.
+3. Create a new file by clicking `File > New File` and type in `import explorerhat` before pressing F5 to run your program.
 
 If everything is working you should see a message saying "Explorer HAT Pro detected". If not, check that you have [installed the software](software.md) correctly and connected your Explorer HAT to the GPIO pins. 
 
@@ -20,6 +20,24 @@ The Explorer HAT has touch buttons labelled 1-4, and four LED lights in differen
 
 
 ## Turning on lights
+
+1. You can use Python to tell the Explorer HAT which lights to turn on and off. Add the new lines of code into your Python file, then run the program to see what it does:
+
+```python
+import explorerhat
+from time import sleep
+
+explorerhat.light.red.on()
+sleep(2)
+explorerhat.light.red.off()
+sleep(1)
+explorerhat.light.on()
+sleep(5)
+```
+
+Can you work out how to...
+* Turn the other coloured lights on individually (blue, yellow, green)?
+* Turn all of the lights off?
 
 
 
@@ -33,28 +51,3 @@ This would be a pretty easy game if the lights came on in the same order, for th
 * How long the pause is in between one light turning off and the next light turning on
 
 
-1. Now do X
-
-Now we have X
-
-## The Next Step
-
-Now we've done X, we'll do Y.
-
-1. First do A
-
-1. Then do B
-
-1. Now do C in code:
-
-    ```python
-    print("Hello world")
-    ```
-
-    In Python the `print` function is something
-
-1. Now do D
-
-1. Now do Y
-
-Now we have X and Y
