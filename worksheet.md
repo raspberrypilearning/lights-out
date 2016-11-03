@@ -84,8 +84,22 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
 ## Pressing the button
 
-1. We need to
+1. You need to know when the player presses a button on the Explorer HAT, and which button it was that they pressed. At the bottom of your code, add this line:
 
+    ```python
+    explorerhat.touch.pressed(button_pressed)
+    ```
+
+2. When a button is pressed, the `button_pressed` function will be called, so we need to write this function. Put the following code at the start of your file, after the `import` statements:
+
+    ```python
+    def button_pressed(channel,event):
+        print("You pressed button " + str(channel) )
+        explorerhat.light.off()
+
+    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed is displayed in the Python Shell.
+
+    ![](images/pressed-button.png)
 
 
 
