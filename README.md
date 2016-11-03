@@ -14,7 +14,7 @@ As well as a Raspberry Pi, the usual peripherals, and an up-to-date SD card you'
 ### Software
 
 * Explorer HAT for Python 3
-See [software installation]{software.md}
+See [software installation](software.md)
 
 ## The worksheet
 * Go to the [worksheet](worksheet.md)
