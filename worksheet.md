@@ -1,6 +1,6 @@
 # Lights Out!
 
-In this resource you can find out how to make a fast paced fun reaction game using the Explorer HAT. The zombies are coming - can you turn the lights off quick enough? 
+In this resource you can find out how to make a fast paced fun reaction game using the Explorer HAT. 
 
 The Explorer HAT has touch buttons labelled 1-4, and four LED lights in different colours. The **aim of the game** is to code the Explorer HAT to randomly choose a light to turn on, and the user must press the corresponding button to turn the light off. If the player is too slow or if they press the wrong button, the game is over.  
 
@@ -12,9 +12,9 @@ The Explorer HAT has touch buttons labelled 1-4, and four LED lights in differen
 
 2. Open Python 3 from the applications menu, under **Programming**: ![](images/python3-app-menu.png)
 
-3. Create a new file by clicking `File > New File` and type in `import explorerhat` before pressing F5 to run your program.
+3. Create a new file by clicking `File > New File` and type the code `import explorerhat` before pressing F5 to run your program.
 
-If everything is working you should see a message saying "Explorer HAT Pro detected...". If not, check that you have [installed the software](software.md) correctly and connected your Explorer HAT to the GPIO pins. 
+If everything is working you should see a message saying "Explorer HAT Pro detected...". If not, check that you have [installed the software](software.md) and connected your Explorer HAT to the GPIO pins correctly. 
 
 
 ## Turning on lights
@@ -44,7 +44,7 @@ If everything is working you should see a message saying "Explorer HAT Pro detec
 This would be a pretty easy game if the lights came on in the same order, for the same length of time! To make it as tricky as possible for the player you need to add some randomness. Here are the things you will decide randomly:
 
 * Which light is chosen to turn on
-* How long the Explorer HAT waits before turning the next light on
+* How long to wait before turning the next light on
 
 
 1. To generate random numbers you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. **Delete** all of the code beneath this where you experimented with turning the lights on and off.
@@ -57,7 +57,7 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
     This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`. We are choosing lights by number rather than colour because later on you will need to test whether the user pressed the corresponding numbered button.
 
-3. Now add some code to turn the right light on depending on which light was randomly chosen. Can you finish off the rest of the code - 3 is the red light and 4 is the green light:
+3. Now add some code to turn the right light on depending on which number was randomly chosen. Can you **finish off the rest of the code** - 3 is the red light and 4 is the green light:
 
     ```python
     if light == 1:
@@ -89,7 +89,7 @@ This would be a pretty easy game if the lights came on in the same order, for th
     explorerhat.touch.pressed(button_pressed)
     ```
 
-2. When a button is pressed, the `button_pressed` function will be called, so we need to write this function. Put the following code at the **start** of your file, after the `import` statements:
+2. When a button is pressed, the `button_pressed` function will be called, so you need to write this function. Put the following code at the **start** of your file, just after the `import` statements:
 
     ```python
     def button_pressed(channel, event):
@@ -105,7 +105,7 @@ This would be a pretty easy game if the lights came on in the same order, for th
 ## Lots of lights!
 1. Your program can choose and switch on a random light, and then switch it off when a button is pressed. Add a `game_in_progress` variable and a loop to your game so that lights keep being randomly chosen. 
 
-Your code so far should look like this:
+    Your code so far should look like this:
 
     ```python
     import explorerhat
@@ -148,14 +148,12 @@ Your code so far should look like this:
 
 ## Adding a timer
 
-1. After you switch the light on, you need to start a timer. To do this, you will need to add another line of code with your `import` statements and  add `from time import time`. 
+1. After you switch a light on, you need to start a timer. Firstly, you will need to add another line of code next to your `import` statements. Find the right place and add `from time import time`.
 
 2. Now find the place in your program after you have turned a light on, but before the line of code dealing with the button being pressed. Create a variable called `start` to record the current time - this will be provided by your Raspberry Pi and is pretty accurate.
 
     ```python
     ...
-    elif light == 4:
-        explorerhat.light.green.on()
 
     # Record the current time
     start = time()
@@ -204,15 +202,16 @@ Your code so far should look like this:
 
     Move the code for dealing with button presses to be part of the `else` - you will need to **indent** it to be in the right place. 
 
-5. If you run this code you will see that even if you press the right button extremely quickly, the program will still declare you to have taken too long. This is because the loop will keep checking until time is up, because you haven't told it to stop checking because a button was pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
+5. If you run this code you will see that even if you press the right button extremely quickly, the program will still declare you to have taken too long. This is because the loop will keep checking until time is up, because you haven't told it to stop checking when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
 
     ```python
         def button_pressed(channel, event):
+            print("You pressed " + str(channel) )
+
+            explorerhat.light.off()
+
             global waiting_for_press
             waiting_for_press = False
-
-            print("You pressed " + str(channel) )
-            explorerhat.light.off()
 
     ```
 
@@ -220,11 +219,27 @@ Your code so far should look like this:
 
 
 ## But was it the right button?
+1. The final part of our game is to check if the button the player pressed was in fact the right button. To do this you need to edit your `button_pressed` function again. At the start of the function (just below the `def` line) Compare the variable `light` (the number of the chosen light) to the variable `channel` (the number of the button pressed):
 
+    ```python
+    if light == channel:
+        print("Well done")
+    else:
+        print("Wrong button")
+        global game_in_progress
+        game_in_progress = False
+    ```
+
+    Once again, you will need to tell Python that you want to change the value of the variable game_in_progress from inside the function by using the word `global`.
+
+
+That's it! Now test your game with your friends.
 
 
 ## Extensions
 * Add a streak counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game.
 * Change the amount of time the person has to turn the light off to be a random number
+* Allow the user to choose a difficulty level from 1-4 and alter the time they are allowed depending on the difficulty level they chose
+* Change your game to use the capacitive touch inputs on the Explorer HAT (5-8) so that instead of pressing the buttons the user might have to press a banana, marshmallow, jelly baby or other interesting conductive physical objects!
 
 
