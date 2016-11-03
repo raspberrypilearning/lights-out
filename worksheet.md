@@ -36,28 +36,29 @@ If everything is working you should see a message saying "Explorer HAT Pro detec
     Can you work out how to...
     * Turn the other coloured lights on individually (blue, yellow, green)?
     * Turn all of the lights off at once?
-    * Change the length of time lights are turned on and off for?
+    * Change the length of time the lights are turned on and off for?
 
 
-## Adding randomness to your game
+## Using the random library
 
-This would be a pretty easy game if the lights came on in the same order, for the same length of time! To make it as tricky as possible for the player we need to add some randomness! Here are the things we will decide randomly:
+This would be a pretty easy game if the lights came on in the same order, for the same length of time! To make it as tricky as possible for the player you need to add some randomness. Here are the things you will decide randomly:
 
 * Which light is chosen to turn on
 * How long the Explorer HAT waits before turning the next light on
 * How long the user gets to press the button before they lose
 
-1. To generate random numbers we need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. Delete all of the code beneath this where you experimented with turning the lights on and off.
 
-2. Firstly we will ask Python to choose a random light to turn on. Add this code to your program:
+1. To generate random numbers you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. **Delete** all of the code beneath this where you experimented with turning the lights on and off.
+
+2. Firstly you will ask Python to choose a random light to turn on. Add this code to your program:
 
     ```python
     light = random.randint(1,4)
     ```
 
-    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`. We are choosing lights by number rather than colour because later on we will need to test whether the user pressed the corresponding numbered button.
+    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`. We are choosing lights by number rather than colour because later on you will need to test whether the user pressed the corresponding numbered button.
 
-3. Now add some code to turn on a light depending on which light was randomly chosen. Can you finish off the rest of the code - 3 is the red light and 4 is the green light:
+3. Now add some code to turn the right light on depending on which light was randomly chosen. Can you finish off the rest of the code - 3 is the red light and 4 is the green light:
 
     ```python
     if light == 1:
@@ -68,20 +69,34 @@ This would be a pretty easy game if the lights came on in the same order, for th
 
     Run your program several times to check that each time the program runs, a different light is randomly chosen and lights up immediately. 
 
-4. To make the game more fun, there needs to be an unpredictable gap between the lights, so we will add some code to wait a random length of time before turning on the next light:
+4. To make the game more fun, there needs to be an unpredictable gap between the lights, so you will add some code to wait a random length of time before turning on the next light:
 
-Underneath the code where you chose which light to turn on, add a new line of code:
+    Underneath the code where you chose which light to turn on, add two new lines of code:
 
-```python
-light = random.randint(1,4)
-wait_for_next = random.uniform(0.5, 3.5)
+    ```python
+    light = random.randint(1,4)
+    wait_for_next = random.uniform(0.5, 3.5)
 
-sleep(wait_for_next)
-```
-This time we are using the `random.uniform` function which allows us to choose decimal numbers. In the code above, Pytho chooses a number which could be anything between half a second (0.5) and 3 and a half seconds (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
+    sleep(wait_for_next)
+    ```
+    This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and 3 and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
 
-## 
 
+## Pressing the button
+
+1. We need to
+
+
+
+
+## Adding a timer
+
+Every time you turn a light on, the player is given a random length of time to press the button
+
+1. 
+
+## Extensions
+* Add a streak counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game.
 
 
 
