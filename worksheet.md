@@ -2,6 +2,8 @@
 
 In this resource you can find out how to make a fast paced fun reaction game using the Explorer HAT. The zombies are coming - can you turn the lights off quick enough? 
 
+The Explorer HAT has touch buttons labelled 1-4, and four LED lights in different colours. The **aim of the game** is to code the Explorer HAT to randomly choose a light to turn on, and the user must press the corresponding button to turn the light off. If the player is too slow or if they press the wrong button, the game is over.  
+
 ## Setting up 
 
 **Before you start**, make sure your Raspberry Pi is powered down and switched off 
@@ -14,61 +16,59 @@ In this resource you can find out how to make a fast paced fun reaction game usi
 
 If everything is working you should see a message saying "Explorer HAT Pro detected...". If not, check that you have [installed the software](software.md) correctly and connected your Explorer HAT to the GPIO pins. 
 
-The Explorer HAT has touch buttons labelled 1-4, and four LED lights in different colours. The **aim of the game** is to code the Explorer HAT to randomly choose a light to turn on, and the user must press the corresponding button to turn the light off. If the player is too slow or if they press the wrong button, the game is over.  
-
 
 ## Turning on lights
 
 1. You can use Python to tell the Explorer HAT which lights to turn on and off. Add the new lines of code into your Python file, then run the program to see what it does:
 
-```python
-import explorerhat
-from time import sleep
+    ```python
+    import explorerhat
+    from time import sleep
 
-explorerhat.light.red.on()
-sleep(2)
-explorerhat.light.red.off()
-sleep(1)
-explorerhat.light.on()
-sleep(5)
-```
+    explorerhat.light.red.on()
+    sleep(2)
+    explorerhat.light.red.off()
+    sleep(1)
+    explorerhat.light.on()
+    sleep(5)
+    ```
 
-Can you work out how to...
-* Turn the other coloured lights on individually (blue, yellow, green)?
-* Turn all of the lights off?
-* Change the length of time lights are turned on and off for?
+    Can you work out how to...
+    * Turn the other coloured lights on individually (blue, yellow, green)?
+    * Turn all of the lights off at once?
+    * Change the length of time lights are turned on and off for?
 
 
 ## Adding randomness to your game
 
-This would be a pretty easy game if the lights came on in the same order, for the same length of time. To make it as tricky as possible for the player we need to add some randomness! Here are the things we will decide randomly:
+This would be a pretty easy game if the lights came on in the same order, for the same length of time! To make it as tricky as possible for the player we need to add some randomness! Here are the things we will decide randomly:
 
 * Which light is chosen to turn on
 * How long the Explorer HAT waits before turning the next light on
 * How long the user gets to press the button before they lose
 
-1. To generate random numbers we need to use Python's `random` library. Find the line in your program that says `from time import sleep` and underneath it type in `import random`. Delete all of your code beneath this where you experimented with turning the lights on and off.
+1. To generate random numbers we need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. Delete all of the code beneath this where you experimented with turning the lights on and off.
 
-2. Firstly we will ask Python to choose a random light to turn on. 
+2. Firstly we will ask Python to choose a random light to turn on. Add this code to your program:
 
-```python
-light = random.randint(1,4)
-```
+    ```python
+    light = random.randint(1,4)
+    ```
 
-This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`. We are choosing lights by number rather than colour because later on we will need to test whether the user pressed the corresponding numbered button.
+    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`. We are choosing lights by number rather than colour because later on we will need to test whether the user pressed the corresponding numbered button.
 
-2. Now add some code to turn on a light depending on which light was randomly chosen. Can you finish off the rest of the code - 3 is the red light and 4 is the green light:
+3. Now add some code to turn on a light depending on which light was randomly chosen. Can you finish off the rest of the code - 3 is the red light and 4 is the green light:
 
-```python
-if light == 1:
-    explorerhat.light.blue.on()
-elif light == 2:
-    explorerhat.light.yellow.on()
-```
+    ```python
+    if light == 1:
+        explorerhat.light.blue.on()
+    elif light == 2:
+        explorerhat.light.yellow.on()
+    ```
 
-Run your program several times to check that each time the program runs, a different light is randomly chosen and lights up immediately. 
+    Run your program several times to check that each time the program runs, a different light is randomly chosen and lights up immediately. 
 
-3. To make the game more fun, there needs to be an unpredictable gap between the lights, so we will add some code to wait a random length of time before turning on the next light:
+4. To make the game more fun, there needs to be an unpredictable gap between the lights, so we will add some code to wait a random length of time before turning on the next light:
 
 Underneath the code where you chose which light to turn on, add a new line of code:
 
