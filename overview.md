@@ -1,3 +1,3 @@
-In this resource you can find out how to make a fast paced fun reaction game using the Explorer HAT. 
+In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT.
 
-The Explorer HAT has touch buttons labelled 1-4, and four LED lights in different colours. The **aim of the game** is to code the Explorer HAT to randomly choose a light to turn on, and the user must press the corresponding button to turn the light off. If the player is too slow or if they press the wrong button, the game is over.  
+The Explorer HAT has touch buttons labelled from 1 to 4, and four LED lights in different colours. The aim of the game is to program the Explorer HAT to turn a light on at random; the player must press the corresponding button to turn the light off. If the player is too slow, or if they press the wrong button, the game is over.
