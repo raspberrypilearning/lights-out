@@ -1,3 +1,3 @@
 # Hardware Requirements
 
-Explorer HAT addon board
+Explorer HAT 
