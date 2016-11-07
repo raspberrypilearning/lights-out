@@ -39,15 +39,15 @@ If everything is working you should see a message saying "Explorer HAT Pro detec
     
     * Turn the other coloured lights on individually (blue, yellow, green)
     * Turn all of the lights off at once
-    * Change the length of time the lights are turned on and off for
+    * Change the length of time for which the lights are turned on and off 
 
 ## Using the random library
 
-This would be a pretty easy game if the lights always came on in the same order, for the same length of time! To make it as tricky as possible for the player you need to add some randomness. You will write your program to randomise which light is chosen to turn on, and how long to wait before turning the next light on.
+This would be a pretty easy game if the lights always came on in the same order, for the same length of time! To make it as tricky as possible for the player, you need to add some randomness. You will write your program to randomize which light is chosen to turn on, and how long to wait before turning the next light on.
 
-1. To generate random numbers you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. **Delete** all of the code beneath this where you experimented with turning the lights on and off.
+1. To generate random numbers, you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. **Delete** all of the code beneath this (where you experimented with turning the lights on and off).
 
-2. Firstly you will ask Python to choose a random light to turn on. Add this code to your program:
+2. First, you will ask Python to choose a random light to turn on. Add this code to your program:
 
     ```python
     light = random.randint(1,4)
@@ -55,7 +55,7 @@ This would be a pretty easy game if the lights always came on in the same order,
 
     This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`. 
 
-3. Now add some code to turn the right light on depending on which number was randomly chosen. Can you **finish off the rest of the code** - 3 is the red light and 4 is the green light:
+3. Now add some code to turn the one light on depending on the number which was randomly chosen. Can you finish off the rest of the code? Note that 3 is the red light and 4 is the green light:
 
     ```python
     if light == 1:
