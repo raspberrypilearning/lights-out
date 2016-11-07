@@ -10,7 +10,9 @@ Before you start, make sure your Raspberry Pi is powered down and switched off.
 
 1. Carefully mount the Explorer HAT onto the GPIO pins on your Raspberry Pi, then boot the Pi.
 
-2. Open Python 3 from the Programming menu: ![Opening Python 3](images/python3-app-menu.png)
+2. Open Python 3 from the Programming menu: 
+    
+    ![Opening Python 3](images/python3-app-menu.png)
 
 3. Create a new file by clicking **File** > **New File** and type the code `import explorerhat` before pressing **F5** to run your program.
 
