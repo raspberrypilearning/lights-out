@@ -16,7 +16,7 @@ Before you start, make sure your Raspberry Pi is powered down and switched off.
 
 3. Create a new file by clicking **File** > **New File** and type the code `import explorerhat` before pressing **F5** to run your program.
 
-If everything is working you should see a message saying "Explorer HAT Pro detected...". If not, check that you have [installed the software](software.md) and connected your Explorer HAT to the GPIO pins correctly. 
+If everything is working you should see a message saying "Explorer HAT Pro detected...". If not, check that you have [installed the software](software.md), and that you have connected your Explorer HAT correctly to the GPIO pins. 
 
 
 ## Turning lights on 
@@ -35,19 +35,15 @@ If everything is working you should see a message saying "Explorer HAT Pro detec
     sleep(5)
     ```
 
-    Can you work out how to...
-    * Turn the other coloured lights on individually (blue, yellow, green)?
-    * Turn all of the lights off at once?
-    * Change the length of time the lights are turned on and off for?
-
+    Can you work out how to do make your program do these things? 
+    
+    * Turn the other coloured lights on individually (blue, yellow, green)
+    * Turn all of the lights off at once
+    * Change the length of time the lights are turned on and off for
 
 ## Using the random library
 
-This would be a pretty easy game if the lights came on in the same order, for the same length of time! To make it as tricky as possible for the player you need to add some randomness. Here are the things you will decide randomly:
-
-* Which light is chosen to turn on
-* How long to wait before turning the next light on
-
+This would be a pretty easy game if the lights always came on in the same order, for the same length of time! To make it as tricky as possible for the player you need to add some randomness. You will write your program to randomise which light is chosen to turn on, and how long to wait before turning the next light on.
 
 1. To generate random numbers you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. **Delete** all of the code beneath this where you experimented with turning the lights on and off.
 
