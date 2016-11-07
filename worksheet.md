@@ -64,7 +64,7 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.light.yellow.on()
     ```
 
-    Run your program several times. Cheack that, each time the program runs, a different light is randomly chosen. The light should turn on immediately. 
+    Run your program several times. Check that, each time the program runs, a different light is randomly chosen. The light should turn on immediately. 
 
 4. To make the game more fun, there needs to be an unpredictable gap between the lights turning on, so let's add some code to wait a random length of time before turning on the next light:
 
@@ -76,7 +76,7 @@ This would be a pretty easy game if the lights always came on in the same order,
     wait_for_next = random.uniform(0.5, 3.5)
     sleep(wait_for_next)
     ```
-    This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and 3 and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
+    This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and three and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
 
 
 ## Pressing the button
@@ -95,7 +95,7 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.light.off()
     ```
 
-    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed is displayed in the Python Shell and all lights switch off.
+    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed is displayed in the Python shell and all lights switch off.
 
     ![A message telling you which button was pressed](images/pressed-button.png)
 
@@ -141,7 +141,7 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.touch.pressed(button_pressed)
 
     ```
-    Notice that at the moment pressing **any** button will turn the light off! That's not quite right but you will fix it later.
+    Notice that at the moment pressing **any** button will turn the light off! That's not quite right but we will fix it later.
     ![You can press any button to turn the light off](images/press-wrong-button.png)
 
 ## Adding a timer
