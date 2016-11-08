@@ -1,6 +1,6 @@
 # Lights Out!
 
-![](cover_make.png)
+![](cover.png)
 
 In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT. 
 
