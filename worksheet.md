@@ -141,7 +141,8 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.touch.pressed(button_pressed)
 
     ```
-    Notice that at the moment pressing **any** button will turn the light off! That's not quite right but we will fix it later.
+    Notice that at the moment pressing **any** button will turn the light off, whether that button corresponds to the light's number or not! That's not quite right but we will fix it later.
+    
     ![You can press any button to turn the light off](images/press-wrong-button.png)
 
 ## Adding a timer
@@ -150,7 +151,7 @@ After you switch a light on, you need to start a timer and check how long the pl
 
 1. Firstly, you will need to tell Python to import the time function. Next to your other `import` statements, add the line `from time import time` to tell Python you want to use the `time` function.
 
-2. Go to the place in your program just before the line of code checking for the button being pressed. Create a variable called `start` to record the current time - this will be provided by your Raspberry Pi and is pretty accurate.
+2. Go to the place in your program just before the line of code checking for the button being pressed. Create a variable called `start` to record the current time: this will be provided by your Raspberry Pi and is pretty accurate.
 
     ```python
     # ...other code above
@@ -162,7 +163,7 @@ After you switch a light on, you need to start a timer and check how long the pl
 
     ```
 
-3. You can choose how many seconds the player will have to press the button once a light is turned on. Add a **constant** to your program just after the `game_in_progress` variable with the value you have chosen. I chose to allow my player 1.5 seconds:
+3. You can choose how many seconds the player will have to press the button once a light is turned on. Add a **constant** to your program just after the `game_in_progress` variable with the value you have chosen. We chose to allow our player 1.5 seconds:
 
 
     ```python
@@ -174,7 +175,7 @@ After you switch a light on, you need to start a timer and check how long the pl
     The smaller the number, the quicker the player will have to be!
 
 
-4. Now add a loop to keep checking whether the user has run over the amount of time they were allowed to take. You can think of the purpose of this loop like someone on a long car journey who keeps asking "are we nearly there yet?", "are we there now?", "how about now?"! :)
+4. Now add a loop to keep checking whether the user has run over the amount of time they were allowed to take. You can think of this loop's constant checking as being like someone on a long car journey who keeps asking "are we nearly there yet?", "are we there now?", "how about now?"! 
 
     ```python
     ...
@@ -201,9 +202,9 @@ After you switch a light on, you need to start a timer and check how long the pl
 
     ```
 
-    Move the code for dealing with button presses to be part of the `else` - you will need to **indent** it to be in the right place. 
+    Move the code for dealing with button presses to be part of the `else` statement. You will need to **indent** it for it to be in the right place. 
 
-5. If you run this code you will see that even if you press the right button extremely quickly, the program will still declare you to have taken too long. This is because you haven't told the game to stop checking if time is up when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
+5. If you run this code you will see that even if you press the correct button extremely quickly, the program will still declare you to have taken too long. This is because you haven't told the game to stop checking if time is up when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
 
     ```python
         def button_pressed(channel, event):
