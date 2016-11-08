@@ -66,7 +66,7 @@ This would be a pretty easy game if the lights always came on in the same order,
 
     Run your program several times. Check that, each time the program runs, a different light is randomly chosen. The light should turn on immediately. 
 
-4. To make the game more fun, there needs to be an unpredictable gap between the lights turning on, so let's add some code to wait a random length of time before turning on the next light:
+4. To make the game more fun, there needs to be an unpredictable gap between the lights turning on, so let's add some code to make the program wait a random length of time before turning on the next light:
 
     Underneath the code where you chose which light to turn on, add two new lines of code:
 
