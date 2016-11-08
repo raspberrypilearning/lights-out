@@ -95,7 +95,7 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.light.off()
     ```
 
-    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed is displayed in the Python shell and all lights switch off.
+    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed will be displayed in the Python shell and all lights will be switched off.
 
     ![A message telling you which button was pressed](images/pressed-button.png)
 
