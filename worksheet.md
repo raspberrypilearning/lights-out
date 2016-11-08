@@ -21,7 +21,7 @@ If everything is working you should see a message saying "Explorer HAT Pro detec
 
 ## Turning lights on 
 
-1. You can use Python to tell the Explorer HAT which lights to turn on and off. Add the new lines of code into your Python file, then run the program to see what it does:
+1. You can use Python to tell the Explorer HAT which lights to turn on and off. Add the following new lines of code into your Python file, then run the program to see what it does:
 
     ```python
     import explorerhat
