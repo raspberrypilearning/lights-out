@@ -6,7 +6,7 @@
     explorerhat.touch.pressed(button_pressed)
     ```
 
-2. When a button is pressed, the `button_pressed` function will be called, so you need to write this function. Put the following code at the **start** of your file, just after the `import` statements:
+- When a button is pressed, the `button_pressed` function will be called, so you need to write this function. Put the following code at the **start** of your file, just after the `import` statements:
 
     ```python
     def button_pressed(channel, event):
