@@ -1,0 +1,28 @@
+---
+title: Lights out!
+hero_image: images/banner.png
+description: In this resource you will find out how to make a fun and fast-paced Explorer
+  HAT reaction game
+original_url: https://raspberrypi.org/learning/lights-out
+theme: red
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Lights Out!
+- title: 'Setting up '
+- title: 'Turning lights on '
+- title: Using the random library
+- title: Pressing the button
+- title: Lots of lights!
+- title: Adding a timer
+- title: But was it the right button?
+- title: What next?
+
