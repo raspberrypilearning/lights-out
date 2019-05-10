@@ -1,19 +1,19 @@
-## But was it the right button?
+## Maar was het de juiste knop?
 
-The final part of our game is to check if the button the player pressed was in fact the right button. To do this you need to edit your `button_pressed` function again. At the start of the function, add code to check whether the variable `light` (the number of the chosen light) is equal to the variable `channel` (the number of the button pressed):
+Het laatste deel van onze game is om te controleren of de knop die de speler indrukte de juiste knop was. Om dit te doen, moet je je `button_pressed` functie opnieuw bewerken. Voeg bij het begin van de functie code toe om te controleren of de variabele `light` (het nummer van het gekozen licht) gelijk is aan de variabele `channel` (het nummer van de ingedrukte knop):
 
 ```python
 def button_pressed(channel, event):
     if light == channel:
-        print("Well done")
+        print("Goed gedaan")
     else:
-        print("Wrong button")
+        print("Verkeerde knop")
         global game_in_progress
         game_in_progress = False
 ```
 
-Once again, you will need to tell Python that you want to change the value of the variable `game_in_progress` from inside the function by using the word `global`.
+Nogmaals, je moet Python vertellen dat je de waarde van de variabele `game_in_progress` wilt veranderen vanuit de functie door het woord `global` te gebruiken.
 
-![The game should now detect whether the right button was pressed](images/press-right-button.png)
+![Het spel zou nu moeten detecteren of de rechterknop was ingedrukt](images/press-right-button.png)
 
-That's it! Now test your game with your friends.
+Dat is het! Test nu je spel met je vrienden.
