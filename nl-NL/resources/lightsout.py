@@ -3,15 +3,15 @@ from time import sleep
 from time import time 
 import random
 
-# The button_pressed function
+# De knop ingedrukt-functie
 def button_pressed(channel, event):
     
-    print("You pressed button "+str(channel) )
+    print ("Je drukte op de knop" + str (channel))
 
     if light == channel:
-        print("Well done")
+        print ("Goed gedaan")
     else:
-        print("Wrong button!")
+        print ("Verkeerde knop!")
         global game_in_progress
         game_in_progress = False
     
@@ -22,20 +22,20 @@ def button_pressed(channel, event):
     
 
 
-# Keep playing the game until game_in_progress becomes False
+# Blijf het spel spelen totdat game_in_progress False wordt
 game_in_progress = True
 TIME_ALLOWED = 1.5
 
 while game_in_progress:
     
-    # Randomly choose a light
+    # Kies willekeurig een licht
     light = random.randint(1,4)
 
-    # Choose how long to wait before turning on the light
+    # Kies hoe lang je moet wachten voordat het licht aangaat
     wait_for_next = random.uniform(0.5, 3.5)
     sleep(wait_for_next)
 
-    # Turn on the selected light
+    # Schakel het geselecteerde licht in
     if light == 1:
         explorerhat.light.blue.on()
     elif light == 2:
@@ -46,22 +46,22 @@ while game_in_progress:
         explorerhat.light.green.on()
 
 
-    # Record the current time
+    # Neem de huidige tijd
     start = time()
 
     waiting_for_press = True
     while waiting_for_press and game_in_progress:
 
-        # What's the time now?
+        # Wat is nu de tijd?
         now = time()
         time_taken = now - start
 
         if time_taken > TIME_ALLOWED:
-            print("You took too long!")
+            print ("Het heeft te lang geduurd!")
             explorerhat.light.off()
             game_in_progress = False
             
         else:            
-            # When a button is pressed, call the button_pressed function
+            # Wanneer een knop is ingedrukt, de button_pressed functie aanroepen
             explorerhat.touch.pressed(button_pressed)
 
