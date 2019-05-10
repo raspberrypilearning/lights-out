@@ -1,0 +1,30 @@
+---
+title: Lichten uit!
+hero_image: images/banner.png
+description: In dit project ontdek je hoe je een leuk en snel Explorer HAT-reactiespel kunt maken
+original_url: https://raspberrypi.org/learning/lights-out
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-2, manufacture-0, community-0
+interests: games
+technologies: raspberry-pi, electronic-components, python
+site_areas: projects
+hardware: raspberry-pi, electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: Inleiding
+  - title: Wat heb je nodig
+  - title: Lichten uit!
+  - title: 'Instellen '
+  - title: 'Zet de lichten aan '
+  - title: De random (willekeurig) bibliotheek gebruiken
+  - title: Op de knop drukken
+  - title: Veel lampjes!
+  - title: Een timer toevoegen
+  - title: Maar was het de juiste knop?
+  - title: Wat kun je verder nog doen?
