@@ -1,6 +1,6 @@
-## Turning lights on
+## Zet de lichten aan
 
-- You can use Python to tell the Explorer HAT which lights to turn on and off. Add the following new lines of code into your Python file, then run the program to see what it does:
+- Je kunt Python gebruiken om de Explorer HAT te vertellen welke lampjes moeten worden in- en uitgeschakeld. Voeg de volgende nieuwe regels code toe aan je Python-bestand en voer het programma uit om te zien wat het doet:
     
     ```python
     import explorerhat
@@ -14,8 +14,8 @@
     sleep(5)
     ```
     
-    Can you work out how to do make your program do these things?
+    Kun jij uitvinden hoe jouw programma deze dingen laat gebeuren?
     
-    - Turn the other coloured lights on individually (blue, yellow, green)
-    - Turn all of the lights off at once
-    - Change the length of time for which the lights are turned on and off
+    - Zet de andere gekleurde lichten (blauw, geel, groen) individueel aan
+    - Schakel alle lichten in één keer uit
+    - Verander de tijdsduur waarin de verlichting wordt in- en uitgeschakeld
