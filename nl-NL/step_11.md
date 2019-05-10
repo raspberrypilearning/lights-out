@@ -1,8 +1,8 @@
-## What next?
+## Wat kun je verder nog doen?
 
-* Change the messages the player receives when they press the right or wrong button
-* Allow the player to play again if they lose, without having to press F5 to run the program again
-* Add a 'streak' counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game
-* Change the amount of time the player has to turn the light off to be a randomly chosen number
-* Allow the user to choose a difficulty level, and alter the time they are allowed depending on the difficulty level they chose
-* Change your game to use the capacitive touch inputs on the Explorer HAT (5-8) so that instead of pressing the buttons, the user might have to press a banana, marshmallow, jelly baby, or another capacitive touch object
+* Pas de berichten aan die de speler ontvangt wanneer ze op de juiste of foute knop drukken
+* Laat de speler opnieuw spelen als deze verliest, zonder op F5 te drukken om het programma opnieuw uit te voeren
+* Voeg een 'raak' -teller toe die elke keer dat een lampje wordt uitgezet één toevoegt en de gebruiker vertelt hoeveel lichten ze met succes hebben uitgeschakeld wanneer ze het spel verliezen
+* Wijzig de hoeveelheid tijd die de speler heeft om het licht uit te schakelen door een ​​willekeurig gekozen getal te gebruiken
+* Sta de gebruiker toe om een ​​moeilijkheidsniveau te kiezen en de toegestane tijd te wijzigen, afhankelijk van de moeilijkheidsgraad die zij hebben gekozen
+* Verander je spel om de capacitieve aanraak-ingangen op de Explorer HAT (5-8) te gebruiken, zodat de gebruiker in plaats van op de knoppen te drukken een banaan, marshmallow, jelly belly of een ander capacitief aanraakobject moet indrukken
