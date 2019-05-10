@@ -1,18 +1,18 @@
-## Using the random library
+## De random (willekeurig) bibliotheek gebruiken
 
-This would be a pretty easy game if the lights always came on in the same order, for the same length of time! To make it as tricky as possible for the player, you need to add some randomness. You will randomize which light is turned on, and how long the program will wait before turning the next light on.
+Dit zou een vrij eenvoudig spel zijn als de lichten altijd in dezelfde volgorde aan gingen, met dezelfde tijdsduur! Om het zo lastig mogelijk te maken voor de speler, moet je wat willekeur toevoegen. Je zult willekeurig bepalen welk licht is ingeschakeld en hoe lang het programma zal wachten voordat het volgende licht aan gaat.
 
-- To generate random numbers, you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. Delete all of the code beneath this (where you experimented with turning the lights on and off).
+- Om willekeurige getallen te genereren, moet je de `random` bibliotheek van Python gebruiken. Zoek de regel in je programma die `from time import sleep`, en typ daaronder `import random`. Verwijder alle onderliggende codes (waarbij je hebt geprobeerd de lichten in en uit te schakelen).
 
-- First, you will ask Python to choose a random light to turn on. Add this code to your program:
+- Eerst gal je Python vragen om een ​​willekeurig lampje te kiezen om in te schakelen. Voeg deze code toe aan je programma:
     
     ```python
     light = random.randint(1,4)
     ```
     
-    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`.
+    Deze code kiest een willekeurig integer (geheel getal) tussen 1 en 4 en wijst dit toe aan de variabele `light`.
 
-- Now add some code to turn one light on depending on the number which was randomly chosen. Can you finish off the rest of the code? Note that 3 is the red light and 4 is the green light:
+- Voeg nu een code toe om één licht in te schakelen afhankelijk van het nummer dat willekeurig is gekozen. Kun je de rest van de code afmaken? Merk op dat 3 het rode licht is en 4 het groene licht:
     
     ```python
     if light == 1:
@@ -21,11 +21,11 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.light.yellow.on()
     ```
     
-    Run your program several times. Check that, each time the program runs, a different light is randomly chosen. The light should turn on immediately.
+    Run je programma meerdere keren. Controleer of elke keer dat het programma wordt uitgevoerd, er willekeurig een ander licht wordt gekozen. Het lampje moet onmiddellijk gaan branden.
 
-- To make the game more fun, there needs to be an unpredictable gap between the lights turning on, so let's add some code to make the program wait a random length of time before turning on the next light:
+- Om het spel leuker te maken, moet er een onvoorspelbare tijd zijn tussen de lichten die aan gaan, dus laten we wat code toevoegen om het programma een willekeurige tijd te laten wachten voordat het volgende licht wordt ingeschakeld:
     
-    Underneath the code where you chose which light to turn on, add two new lines of code:
+    Onder de code waar je hebt gekozen welk licht je wilt inschakelen, voeg je twee nieuwe regels toe:
     
     ```python
     light = random.randint(1,4)     
@@ -34,4 +34,4 @@ This would be a pretty easy game if the lights always came on in the same order,
     sleep(wait_for_next)
     ```
     
-    This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and three and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
+    Deze keer gebruik je de functie `random.uniform`, waarmee je getallen met decimalen kunt kiezen. In de bovenstaande code kiest Python een getal dat tussen de 0,5 en de 3,5 kan liggen en wacht dan dat aantal seconden. Je kunt deze waarden veranderen als je meer (of minder) gemeen wilt zijn voor je speler!
