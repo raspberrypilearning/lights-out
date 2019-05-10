@@ -1,22 +1,22 @@
-## Adding a timer
+## Een timer toevoegen
 
-After you switch a light on, you need to start a timer and check how long the player takes to press the button.
+Nadat je een lamp hebt ingeschakeld, moet je een timer starten en controleren hoe lang het duurt voordat de speler op de knop drukt.
 
-- Firstly, you will need to tell Python to import the time function. Next to your other `import` statements, add the line `from time import time` to tell Python you want to use the `time` function.
+- Allereerst moet je Python vertellen om de tijdfunctie te importeren. Voeg na je andere `import` instructies de regel `from time import time` toe om aan Python te laten weten dat je de `time` functie wilt gebruiken.
 
-- Go to the place in your program just before the line of code checking for the button being pressed. Create a variable called `start` to record the current time: this will be provided by your Raspberry Pi and is pretty accurate.
+- Ga naar de plek in je programma, net voor de regel waar gecontroleerd wordt of de knop wordt ingedrukt. Maak een variabele met de naam `start` om de huidige tijd op te nemen: deze wordt door je Raspberry Pi geleverd en is vrij nauwkeurig.
     
     ```python
-    # ...other code above
+    # ...andere code hier boven
     
     # Record the current time
     start = time()
     
-    # ... other code below
+    # ... andere code hieronder
     
     ```
 
-- You can choose how many seconds the player will have to press the button once a light is turned on. Add a **constant** to your program just after the `game_in_progress` variable with the value you have chosen. We chose to allow our player 1.5 seconds:
+- Je kunt kiezen hoeveel seconden de speler op de knop moet drukken nadat een lampje is aangezet. Voeg een **constant** toe aan je programma net na de `game_in_progress` variabele met de waarde die je hebt gekozen. We kozen ervoor om onze speler 1,5 seconde toe te staan:
     
     ```python
     game_in_progress = True
@@ -24,28 +24,28 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    The smaller the number, the quicker the player will have to be!
+    Hoe kleiner het getal, hoe sneller de speler moet zijn!
 
-- Now add a loop to keep checking whether the user has run over the amount of time they were allowed to take. You can think of this loop's constant checking as being like someone on a long car journey who keeps asking "are we nearly there yet?", "are we there now?", "how about now?"!
+- Voeg nu een lus toe om te controleren of de speler te lang heeft gewacht. Je kunt je voorstellen dat deze lus constant controleert of iemand op een lange autorit blijft vragen: "zijn we er al bijna?", "Zijn we er nu?", "Hoe zit het nu?"!
     
     ```python
     ...
     
-    # Record the current time
+    # Leg de huidige tijd vast
     start = time()
     
     waiting_for_press = True
     while waiting_for_press and game_in_progress:
     
-        # What's the time now?
+        # Wat is de tijd nu?
         now = time()
         time_taken = now - start
     
-        # Check if they have taken more time than they were allowed
+        # Controleer of we te lang hebben gewacht
         if time_taken > TIME_ALLOWED:
-            print("You took too long!")
+            print("Je hebt te lang gewacht!")
             explorerhat.light.off()
-            game_in_progress = False    # Lose the game
+            game_in_progress = False    # Spel verloren
     
         else:
             explorerhat.touch.pressed(button_pressed)
@@ -53,13 +53,13 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    Move the code for dealing with button presses to be part of the `else` statement. You will need to **indent** it for it to be in the right place.
+    Verplaats de code voor omgaan met button_pressed zodanig dat het deel uit te maakt van de `else` instructie. Je moet **inspringen** om ervoor te zorgen dat deze op de juiste plaats staat.
 
-- If you run this code you will see that even if you press the correct button extremely quickly, the program will still declare you to have taken too long. This is because you haven't told the game to stop checking if time is up when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
+- Als je deze code uitvoert, zie je dat zelfs als je uiterst snel op de juiste knop drukt, het programma nog steeds zegt dat je te laat hebt gedrukt. Dit komt omdat je het spel niet hebt verteld om te stoppen met controleren of de tijd op is wanneer een knop wordt ingedrukt. Wijzig je `button_pressed` functie om de code te vertellen om de timer te stoppen wanneer een knop wordt ingedrukt.
     
     ```python
         def button_pressed(channel, event):
-            print("You pressed " + str(channel) )
+            print("Je drukte op " + str(channel) )
     
             explorerhat.light.off()
     
@@ -68,4 +68,4 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    In this code, `global` allows us to change the value of the variable `waiting_for_press` from inside the function.
+    In deze code staat `global` ons toe om de waarde van de variabele `waiting_for_press` vanuit de functie te wijzigen.
