@@ -1,5 +1,5 @@
-## Lights Out!
+## Lichten uit!
 
-In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT.
+In dit project ontdek je hoe je een leuk en snel reactie spel maakt met de Explorer HAT.
 
-The Explorer HAT has touch buttons labelled from 1 to 4, and four LED lights in different colours. The aim of the game is to program the Explorer HAT to turn a light on at random, at which point the player must press the corresponding button to turn the light off. If the player is too slow, or if they press the wrong button, the game is over.
+De Explorer HAT heeft aanraaktoetsen met een label van 1 tot 4 en vier LED-lampjes in verschillende kleuren. Het doel van het spel is om de Explorer HAT te programmeren om willekeurig een licht in te schakelen. Op dat moment moet de speler op de corresponderende knop drukken om het licht uit te schakelen. Als de speler te langzaam is, of als hij op de verkeerde knop drukt, is het spel afgelopen.
