@@ -1,18 +1,18 @@
-## What you will make
+## Wat ga je maken?
 
-In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT.
+In dit project ontdek je hoe je een leuk en snel reactie spel maakt met de Explorer HAT.
 
-The Explorer HAT has touch buttons labelled from 1 to 4, and four LED lights in different colours. The aim of the game is to program the Explorer HAT to turn a light on at random, at which point the player must press the corresponding button to turn the light off. If the player is too slow, or if they press the wrong button, the game is over.
+De Explorer HAT heeft aanraaktoetsen met de tekst van 1 tot 4 en vier LED-lampjes in verschillende kleuren. Het doel van het spel is om de Explorer HAT te programmeren om willekeurig een licht in te schakelen. Op dat moment moet de speler op de corresponderende knop drukken om het licht uit te schakelen. Als de speler te langzaam is, of als hij op de verkeerde knop drukt, is het spel afgelopen.
 
-## What you will learn
+## Wat ga je leren
 
-By creating this project with your Raspberry Pi you will learn:
+Door dit project met je Raspberry Pi te maken, leer je:
 
-- How to control lights on the Explorer HAT
-- How to detect when a button is pressed and which button was pressed
-- How to generate random numbers
-- How to simulate a timer using Python This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+- Hoe je lichtjes op de Explorer HAT kunt besturen
+- Hoe te detecteren wanneer een knop wordt ingedrukt en welke knop is ingedrukt
+- Hoe willekeurige getallen te genereren
+- Hoe een timer te simuleren met Python Dit hulpmiddel behandelt elementen uit de volgende delen van het [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
-- [Combine programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)
+- [Combineer programmeerconstructies om een ​​probleem op te lossen](https://www.raspberrypi.org/curriculum/programming/builder)
 
-- [Combine inputs and/or outputs to create projects or solve a problem](https://www.raspberrypi.org/curriculum/physical-computing/builder)
+- [Combineer inputs en/of outputs om projecten te maken of een probleem op te lossen](https://www.raspberrypi.org/curriculum/physical-computing/builder)
