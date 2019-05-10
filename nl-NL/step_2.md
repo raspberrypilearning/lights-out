@@ -1,4 +1,4 @@
-## What you will need
+## Wat heb je nodig
 
 ### Hardware
 
@@ -6,12 +6,12 @@
 
 ### Software
 
-#### Software Installation
+#### Software installatie
 
-To install the software you need, open a terminal window and run the following command:
+Om de software te installeren die je nodig hebt, open je een terminalvenster en voer je de volgende opdracht uit:
 
 ```bash
 curl -sS get.pimoroni.com/explorerhat | bash
 ```
 
-You can find further instructions [here](https://github.com/pimoroni/explorer-hat)
+Je vindt hier verdere instructies [](https://github.com/pimoroni/explorer-hat)
