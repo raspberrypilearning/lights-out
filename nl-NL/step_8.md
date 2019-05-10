@@ -1,8 +1,8 @@
-## Lots of lights!
+## Veel lampjes!
 
-- Your program can choose and switch on a random light, and then switch it off when a button is pressed. Add a `game_in_progress` variable and a loop to your game so that lights keep being randomly chosen.
+- Je programma kan een willekeurig lampje kiezen en inschakelen en vervolgens uitschakelen wanneer een knop wordt ingedrukt. Voeg een `game_in_progress` variabele en een lus toe aan je spel, zodat de lichten willekeurig worden gekozen.
     
-    Your code so far should look like this:
+    Je code tot nu toe zou er als volgt uit moeten zien:
     
     ```python
     import explorerhat
@@ -11,7 +11,7 @@
     
     # The button_pressed function
     def button_pressed(channel, event):
-        print("You pressed " + str(channel) )
+        print("Je drukte op knop " + str(channel) )
         explorerhat.light.off()
     
     # Keep playing the game until game_in_progress becomes False
@@ -41,6 +41,6 @@
     
     ```
     
-    Notice that at the moment pressing **any** button will turn the light off, whether that button corresponds to the light's number or not! That's not quite right but we will fix it later.
+    Merk op dat als een **willekeurige** knop gedrukt wordt het licht uitgaat, of die knop overeenkomt met het nummer of niet! Dat klopt niet helemaal, maar we zullen het later oplossen.
     
-    ![You can press any button to turn the light off](images/press-wrong-button.png)
+    ![Je kunt op een willekeurige knop drukken om het licht uit te schakelen](images/press-wrong-button.png)
