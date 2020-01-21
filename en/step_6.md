@@ -33,6 +33,7 @@ This would be a pretty easy game if the lights always came on in the same order,
     wait_for_next = random.uniform(0.5, 3.5)
     sleep(wait_for_next)
     ```
+    
     This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and three and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
 
 

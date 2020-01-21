@@ -39,6 +39,7 @@
         explorerhat.touch.pressed(button_pressed)
 
     ```
+    
     Notice that at the moment pressing **any** button will turn the light off, whether that button corresponds to the light's number or not! That's not quite right but we will fix it later.
     
     ![You can press any button to turn the light off](images/press-wrong-button.png)
