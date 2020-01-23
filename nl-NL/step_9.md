@@ -9,7 +9,7 @@ Nadat je een lamp hebt ingeschakeld, moet je een timer starten en controleren ho
     ```python
     # ...andere code hier boven
     
-    # Record the current time
+    # Leg de huidige tijd vast
     start = time()
     
     # ... andere code hieronder
