@@ -46,7 +46,7 @@ while game_in_progress:
         explorerhat.light.green.on()
 
 
-    # Neem de huidige tijd
+    # Leg de huidige tijd vast
     start = time()
 
     waiting_for_press = True
