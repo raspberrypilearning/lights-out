@@ -2,9 +2,9 @@
 
 Dit zou een vrij eenvoudig spel zijn als de lichten altijd in dezelfde volgorde aan gingen, met dezelfde tijdsduur! Om het zo lastig mogelijk te maken voor de speler, moet je wat willekeur toevoegen. Je zult willekeurig bepalen welk licht is ingeschakeld en hoe lang het programma zal wachten voordat het volgende licht aan gaat.
 
-- Om willekeurige getallen te genereren, moet je de `random` bibliotheek van Python gebruiken. Zoek de regel in je programma die `from time import sleep`, en typ daaronder `import random`. Verwijder alle onderliggende codes (waarbij je hebt geprobeerd de lichten in en uit te schakelen).
+- Om willekeurige getallen te genereren, moet je de `random` bibliotheek van Python gebruiken. Zoek de regel in je programma die `from time import sleep`, en typ daaronder `import random`. Verwijder alle onderliggende codes (waarin je hebt geprobeerd de lichten in en uit te schakelen).
 
-- Eerst gal je Python vragen om een ​​willekeurig lampje te kiezen om in te schakelen. Voeg deze code toe aan je programma:
+- Eerst ga je Python vragen om een ​​willekeurig lampje te kiezen om in te schakelen. Voeg deze code toe aan je programma:
     
     ```python
     light = random.randint(1,4)
