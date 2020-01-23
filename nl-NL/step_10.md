@@ -12,7 +12,7 @@ def button_pressed(channel, event):
         game_in_progress = False
 ```
 
-Nogmaals, je moet Python vertellen dat je de waarde van de variabele `game_in_progress` wilt veranderen vanuit de functie door het woord `global` te gebruiken.
+Nogmaals, je moet Python vertellen dat je de waarde van de variabele `game_in_progress` wil veranderen vanuit de functie door het woord `global` te gebruiken.
 
 ![Het spel zou nu moeten detecteren of de rechterknop was ingedrukt](images/press-right-button.png)
 
