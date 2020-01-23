@@ -1,6 +1,6 @@
 ## Instellen
 
-Zorg er voor dat voordat je begint je Raspberry Pi is uitgeschakeld en de voeding niet is aangesloten.
+Zorg er voor dat voor je begint je Raspberry Pi is uitgeschakeld en de voeding niet is aangesloten.
 
 - Monteer voorzichtig de Explorer HAT op de GPIO-pinnen van je Raspberry Pi en start dan de Pi op.
 
