@@ -18,4 +18,4 @@
     
     - Zet de andere gekleurde lichten (blauw, geel, groen) individueel aan
     - Schakel alle lichten in één keer uit
-    - Verander de tijdsduur waarin de verlichting wordt in- en uitgeschakeld
+    - Verander de tijdsduur dat de verlichting wordt in- en uitgeschakeld
