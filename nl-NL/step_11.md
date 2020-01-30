@@ -7,8 +7,12 @@
 * Sta de gebruiker toe om een ​​moeilijkheidsniveau te kiezen en de toegestane tijd te wijzigen, afhankelijk van de moeilijkheidsgraad die zij hebben gekozen
 * Verander je spel om de capacitieve aanraak-ingangen op de Explorer HAT (5-8) te gebruiken, zodat de gebruiker in plaats van op de knoppen te drukken een banaan, marshmallow, jelly belly of een ander capacitief aanraakobject moet indrukken
 
-Door de community geleverde vertaling
+***
 
-Dit project werd vertaald door Cor Groot en gecontroleerd door Max Schaaper.
+Dit project werd vertaald door vrijwilligers:
 
-Onze geweldige vertalers helpen ons om kinderen over de hele wereld de kans te geven te leren coderen. Jij kunt ons helpen nog meer kinderen te bereiken door onze projecten te vertalen - lees meer op [rpf.io/translators](https://rpf.io/translators).
+Cor Groot
+
+Max Schaaper
+
+Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
