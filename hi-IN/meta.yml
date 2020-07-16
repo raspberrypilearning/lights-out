@@ -1,0 +1,30 @@
+---
+title: बत्तियां बुझाना!
+hero_image: images/banner.png
+description: इस संसाधन में आपको पता चलेगा कि कैसे एक मजेदार और तेज़-तर्रार एक्सप्लोरर एचएटी(Explorer HAT) प्रतिक्रिया गेम बनाया जाए
+original_url: https://raspberrypi.org/learning/lights-out
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-2, manufacture-0, community-0
+interests: games
+technologies: raspberry-pi, electronic-components, python
+site_areas: projects
+hardware: raspberry-pi, electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: भूमिका
+  - title: आपको किन चीजों की आवश्यकता होगी
+  - title: बत्तियां बुझाना!
+  - title: 'स्थापना करना'
+  - title: 'रोशनी चालू कर रहे है'
+  - title: अनियमित(random) लाइब्रेरी का उपयोग करना
+  - title: बटन दबाना
+  - title: बहुत सारी रोशनी!
+  - title: एक टाइमर(timer) जोड़ना
+  - title: लेकिन क्या यह सही बटन था?
+  - title: आगे क्या?
