@@ -1,7 +1,7 @@
 ---
-title: Lights out!
+title: ದೀಪಗಳನ್ನು ಆರಿಸುವ ಆಟ (ಲೈಟ್ಸ್ ಔಟ್)!
 hero_image: images/banner.png
-description: In this resource you will find out how to make a fun and fast-paced Explorer HAT reaction game
+description: ಈ ಸಂಪನ್ಮೂಲದಲ್ಲಿ ನೀವು ಮೋಜಿನ ಮತ್ತು ವೇಗದ Explorer HAT ರಿಯಾಕ್ಷನ್ ಆಟವನ್ನು ಹೇಗೆ ಮಾಡಬೇಕೆಂದು ಕಂಡುಕೊಳ್ಳುವಿರಿ
 original_url: https://raspberrypi.org/learning/lights-out
 theme: navy
 duration: 2
@@ -18,24 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: ಪರಿಚಯ
   - 
-    title: What you will need
+    title: ನಿಮಗೆ ಬೇಕಾದುದು
   - 
-    title: Lights Out!
+    title: ದೀಪಗಳನ್ನು ಆರಿಸುವ ಆಟ (ಲೈಟ್ಸ್ ಔಟ್)!
   - 
-    title: 'Setting up '
+    title: 'ಪೂರ್ವ ಸಿದ್ಧತೆ '
   - 
-    title: 'Turning lights on '
+    title: 'ದೀಪಗಳನ್ನು ಹಚ್ಚುವುದು... (ದೀಪಗಳನ್ನುಆನ್ ಮಾಡುವುದು) '
   - 
-    title: Using the random library
+    title: Random ಗ್ರಂಥಾಲಯವನ್ನು ಬಳಸುವುದು
   - 
-    title: Pressing the button
+    title: ಗುಂಡಿಯನ್ನು ಒತ್ತುವುದು
   - 
-    title: Lots of lights!
+    title: ಸಾಕಷ್ಟು ದೀಪಗಳು!
   - 
-    title: Adding a timer
+    title: ಟೈಮರ್ ಅನ್ನು ಸೇರಿಸುವ ವಿಧಾನ
   - 
-    title: But was it the right button?
+    title: ಆದರೆ ಅದು ಸರಿಯಾದ ಗುಂಡಿಯೇ?
   - 
-    title: What next?
+    title: ಮುಂದೆ ಏನು?
