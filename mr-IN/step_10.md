@@ -1,6 +1,6 @@
-## But was it the right button?
+## पण ते बटन बरोबर होते का?
 
-The final part of our game is to check if the button the player pressed was in fact the right button. To do this you need to edit your `button_pressed` function again. At the start of the function, add code to check whether the variable `light` (the number of the chosen light) is equal to the variable `channel` (the number of the button pressed):
+आपल्या खेळाचा शेवटचा भाग हे तपासणे आहे कि खेळाडूने जे बटण दाबले आहे ते खरोखरीच योग्य बटण आहे. हे करण्यासाठी आपणास आपले `button_pressed` फंक्शन सुधारणे आवश्यक आहे. फंक्शनच्या सुरवातीला, व्हेरिएबल `light` (निवडलेल्या दिव्याची संख्या) हे व्हेरिएबल `channel` (दाबलेल्या बटणाची संख्या) शी समान असल्याचे तपासणारा कोड जोडा:
 
 ```python
 def button_pressed(channel, event):
@@ -12,8 +12,8 @@ def button_pressed(channel, event):
         game_in_progress = False
 ```
 
-Once again, you will need to tell Python that you want to change the value of the variable `game_in_progress` from inside the function by using the word `global`.
+पुन्हा एकदा आपल्याला Pythonला सांगण्याची आवश्यकता आहे की आपण `game_in_progress` व्हेरिएबलचे मूल्य `global` हा शब्द वापरुन फंक्शनच्या आतून बदलू इच्छिता.
 
-![The game should now detect whether the right button was pressed](images/press-right-button.png)
+![खेळाला आता योग्य बटण दाबले आहे कि नाही हे शोधता यायला हवे](images/press-right-button.png)
 
-That's it! Now test your game with your friends.
+बस एवढेच! आता आपल्या मित्रांसह आपल्या खेळाची चाचणी घ्या.
