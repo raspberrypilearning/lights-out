@@ -1,6 +1,6 @@
-## Turning lights on
+## दिवे चालू करणे
 
-- You can use Python to tell the Explorer HAT which lights to turn on and off. Add the following new lines of code into your Python file, then run the program to see what it does:
+- आपण Pythonद्वारे एक्सप्लोरर एचएटीला(Explorer HAT) कोणते दिवे चालू अथवा बंद करावयाचे हे सांगू शकतो. खालील कोडच्या नवीन ओळी आपल्या Python फाईलमध्ये जोडा, त्यानंतर काय होते ते पाहण्यासाठी प्रोग्रॅम चालवा:
     
     ```python
     import explorerhat
@@ -14,8 +14,8 @@
     sleep(5)
     ```
     
-    Can you work out how to do make your program do these things?
+    आपल्या प्रोग्रॅमकडून या गोष्टी कश्या करवून घेता येईल हे आपण करू शकता का?
     
-    - Turn the other coloured lights on individually (blue, yellow, green)
-    - Turn all of the lights off at once
-    - Change the length of time for which the lights are turned on and off
+    - इतर रंगांचे दिवे स्वतंत्रपणे चालू करा (निळा, पिवळा, हिरवा)
+    - सर्व दिवे एकाच वेळी बंद करा
+    - दिवे चालू व बंद असण्याचा कालावधी बदला
