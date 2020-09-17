@@ -1,0 +1,30 @@
+---
+title: दिवे बंद!
+hero_image: images/banner.png
+description: या संसाधनात आपल्याला मजेदार आणि वेगवान एक्सप्लोरर एचएटी (Explorer HAT) प्रतिक्रिया खेळ कसा बनवायचा ते आढळेल
+original_url: https://raspberrypi.org/learning/lights-out
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-2, manufacture-0, community-0
+interests: games
+technologies: raspberry-pi, electronic-components, python
+site_areas: projects
+hardware: raspberry-pi, electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: परिचय
+  - title: तुम्हाला कशाची आवश्यकता लागेल
+  - title: दिवे बंद!
+  - title: 'उभारणे '
+  - title: 'दिवे चालू करणे '
+  - title: अनियमित लायब्ररी वापरणे
+  - title: बटण दाबणे
+  - title: खूप सारे दिवे!
+  - title: टाइमर जोडणे
+  - title: पण ते बटन बरोबर होते का?
+  - title: पुढे काय?
