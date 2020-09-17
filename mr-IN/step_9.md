@@ -12,7 +12,7 @@
     # Record the current time
     start = time()
     
-    # ... खाली इतर कोड
+    # ... other code below
     
     ```
 
