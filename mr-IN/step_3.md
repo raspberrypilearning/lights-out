@@ -1,5 +1,5 @@
-## Lights Out!
+## दिवे बंद!
 
-In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT.
+या संसाधनात आपल्याला मजेदार आणि वेगवान एक्सप्लोरर एचएटी (Explorer HAT) प्रतिक्रिया खेळ कसा बनवायचा ते आढळेल.
 
-The Explorer HAT has touch buttons labelled from 1 to 4, and four LED lights in different colours. The aim of the game is to program the Explorer HAT to turn a light on at random, at which point the player must press the corresponding button to turn the light off. If the player is too slow, or if they press the wrong button, the game is over.
+एक्सप्लोरर हॅटमध्ये (Explorer HAT) १ ते ४ पर्यंतचे लेबल असलेली टच बटणे आणि वेगवेगळ्या रंगातील चार एलईडी दिवे आहेत. खेळाचा उद्देश एक्सप्लोरर एचएटी(Explorer HAT) ला प्रोग्रॅम करणे आहे जेणेकरून अनियमितरित्या दिवे चालू होतील व त्याचक्षणी खेळाडू ने संबंधित बटण दाबून तो दिवा बंद करावयाचा आहे. जर खेळाडू खूप हळू असेल किंवा त्यांनी चुकीचे बटण दाबले असेल तर खेळ संपेल.
