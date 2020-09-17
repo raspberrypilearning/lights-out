@@ -1,18 +1,18 @@
-## What you will make
+## आपण काय तयार करणार आहोत
 
-In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT.
+या संसाधनात आपल्याला मजेदार आणि वेगवान एक्सप्लोरर एचएटी (Explorer HAT) प्रतिक्रिया खेळ कसा बनवायचा ते आढळेल.
 
-The Explorer HAT has touch buttons labelled from 1 to 4, and four LED lights in different colours. The aim of the game is to program the Explorer HAT to turn a light on at random, at which point the player must press the corresponding button to turn the light off. If the player is too slow, or if they press the wrong button, the game is over.
+एक्सप्लोरर हॅटमध्ये (Explorer HAT) १ ते ४ पर्यंतचे लेबल असलेली टच बटणे आणि वेगवेगळ्या रंगातील चार एलईडी दिवे आहेत. खेळाचा उद्देश एक्सप्लोरर एचएटी (Explorer HAT) ला प्रोग्रॅम करणे आहे जेणेकरून अनियमितरित्या दिवे चालू होतील व त्याचक्षणी खेळाडू ने संबंधित बटण दाबून तो दिवा बंद करावयाचा आहे. जर खेळाडू खूप हळू असेल किंवा त्यांनी चुकीचे बटण दाबले असेल तर खेळ संपेल.
 
-## What you will learn
+## आपण काय शिकाल
 
-By creating this project with your Raspberry Pi you will learn:
+आपल्या Raspberry Pi सह हा प्रकल्प तयार करुन आपण हे शिकू शकाल:
 
-- How to control lights on the Explorer HAT
-- How to detect when a button is pressed and which button was pressed
-- How to generate random numbers
-- How to simulate a timer using Python This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+- एक्सप्लोरर हॅटवर(Explorer HAT) दिवे कसे नियंत्रित करावे
+- बटण कधी दाबले आहे आणि कोणते बटण दाबले आहे हे कसे शोधायचे
+- अनियमित संख्या कशी निर्माण करावी
+- Pythonचा वापर करून टाइमरचे अनुकरण कसे करावे या संसाधनात [ Raspberry Pi डिजिटल मेकिंग अभ्यासक्रमाच्या](https://www.raspberrypi.org/curriculum/) खालील स्ट्रँडमधील घटक समाविष्ट आहेत:
 
-- [Combine programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)
+- [समस्या सोडवण्यासाठी प्रोग्रामिंग संकल्पना एकत्र करा](https://www.raspberrypi.org/curriculum/programming/builder)
 
-- [Combine inputs and/or outputs to create projects or solve a problem](https://www.raspberrypi.org/curriculum/physical-computing/builder)
+- [प्रकल्प तयार करण्यासाठी किंवा समस्येचे उत्तर शोधण्यासाठी इनपुट आणि / किंवा आउटपुट एकत्र करा](https://www.raspberrypi.org/curriculum/physical-computing/builder)
