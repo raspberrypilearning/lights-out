@@ -1,8 +1,8 @@
-## Lots of lights!
+## खूप सारे दिवे!
 
-- Your program can choose and switch on a random light, and then switch it off when a button is pressed. Add a `game_in_progress` variable and a loop to your game so that lights keep being randomly chosen.
+- आपला प्रोग्रॅम अनियमितरित्या एखादा दिवा निवडून तो चालू करू शकतो, आणि मग बटण दाबल्यावर तो बंद करू शकतो. व्हेरिएबल `game_in_progress` आणि एक लूप तुमच्या खेळामध्ये जोडा जेणेकरून दिवे अनियमितरित्या निवडले जातील.
     
-    Your code so far should look like this:
+    तुमचा कोड आतापर्यंत असा दिसला पाहिजे:
     
     ```python
     import explorerhat
@@ -41,6 +41,6 @@
     
     ```
     
-    Notice that at the moment pressing **any** button will turn the light off, whether that button corresponds to the light's number or not! That's not quite right but we will fix it later.
+    लक्षात घ्या की याक्षणी **any (कुठलेही)** बटण दिवे बंद करेल, ते बटण प्रकाशाच्या संख्येशी संबंधित आहे की नाही! हे तितकसं बरोबर नाही परंतु आपण ते नंतर ठीक करू.
     
-    ![You can press any button to turn the light off](images/press-wrong-button.png)
+    ![कोणतेही बटण दाबून तुम्ही दिवे बंद करू शकता](images/press-wrong-button.png)
