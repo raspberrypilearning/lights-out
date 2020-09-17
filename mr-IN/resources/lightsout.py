@@ -3,7 +3,7 @@ from time import sleep
 from time import time 
 import random
 
-# The button_pressed function
+# button_pressed function
 def button_pressed(channel, event):
     
     print("You pressed button "+str(channel) )
@@ -22,16 +22,16 @@ def button_pressed(channel, event):
     
 
 
-# Keep playing the game until game_in_progress becomes False
+# game_in_progress False होईपर्यंत गेम खेळत रहा
 game_in_progress = True
 TIME_ALLOWED = 1.5
 
 while game_in_progress:
     
-    # Randomly choose a light
+    # सहजगत्या प्रकाश निवडा
     light = random.randint(1,4)
 
-    # Choose how long to wait before turning on the light
+    # लाईट चालू करण्यापूर्वी किती काळ थांबायचे ते निवडा
     wait_for_next = random.uniform(0.5, 3.5)
     sleep(wait_for_next)
 
@@ -46,13 +46,13 @@ while game_in_progress:
         explorerhat.light.green.on()
 
 
-    # Record the current time
+    # वर्तमान वेळ नोंदवा
     start = time()
 
     waiting_for_press = True
     while waiting_for_press and game_in_progress:
 
-        # What's the time now?
+        # आता किती वाजले आहेत?
         now = time()
         time_taken = now - start
 
@@ -62,6 +62,6 @@ while game_in_progress:
             game_in_progress = False
             
         else:            
-            # When a button is pressed, call the button_pressed function
+            # जेव्हा एक बटण दाबले जाते तेव्हा बटणावर क्लिक करा
             explorerhat.touch.pressed(button_pressed)
 
