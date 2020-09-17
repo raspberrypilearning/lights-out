@@ -1,17 +1,17 @@
-## What you will need
+## ನಿಮಗೆ ಬೇಕಾದುದು
 
-### Hardware
+### ಹಾರ್ಡ್‌ವೇರ್ (Hardware)
 
 * Explorer HAT
 
-### Software
+### ಸಾಫ್ಟ್‌ವೇರ್ (software)
 
-#### Software Installation
+#### ಸಾಫ್ಟ್‌ವೇರ್ ಸ್ಥಾಪನೆ (Installation)
 
-To install the software you need, open a terminal window and run the following command:
+ನಿಮಗೆ ಅಗತ್ಯವಿರುವ ಸಾಫ್ಟ್‌ವೇರ್ ಅನ್ನು ಸ್ಥಾಪಿಸಲು, ಟರ್ಮಿನಲ್ ವಿಂಡೋವನ್ನು (terminal window) ತೆರೆಯಿರಿ ಮತ್ತು ಈ ಕೆಳಗಿನ ಆಜ್ಞೆಯನ್ನು ಚಲಾಯಿಸಿ:
 
 ```bash
 curl -sS get.pimoroni.com/explorerhat | bash
 ```
 
-You can find further instructions [here](https://github.com/pimoroni/explorer-hat)
+ಹೆಚ್ಚಿನ ಸೂಚನೆಗಳನ್ನು ನೀವು [ಇಲ್ಲಿ](https://github.com/pimoroni/explorer-hat) ಕಾಣಬಹುದು
