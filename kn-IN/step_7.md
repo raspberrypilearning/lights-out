@@ -1,12 +1,12 @@
-## Pressing the button
+## ಗುಂಡಿಯನ್ನು ಒತ್ತುವುದು
 
-- You need to know when the player presses a button on the Explorer HAT, and which button it was that they pressed. At the **bottom** of your code, add this line:
+- ಆಟಗಾರನು Explorer HAT‌ನಲ್ಲಿ ಒಂದು ಗುಂಡಿಯನ್ನು ಒತ್ತಿದಾಗ ಮತ್ತು ಅವರು ಯಾವ ಗುಂಡಿಯನ್ನು ಒತ್ತಿದರು ಎಂಬುದನ್ನು ನೀವು ತಿಳಿದುಕೊಳ್ಳಬೇಕು. ನಿಮ್ಮ ಕೋಡ್‌ನ **ಕೆಳಭಾಗದಲ್ಲಿ** ಈ ಸಾಲನ್ನು ಸೇರಿಸಿ:
     
     ```python
     explorerhat.touch.pressed(button_pressed)
     ```
 
-- When a button is pressed, the `button_pressed` function will be called, so you need to write this function. Put the following code at the **start** of your file, just after the `import` statements:
+- ಗುಂಡಿಯನ್ನು ಒತ್ತಿದಾಗ, `button_pressed` functionನ್ನು ಕರೆಯಲಾಗುತ್ತದೆ, ಆದ್ದರಿಂದ ನೀವು ಈ functionನನ್ನು ಬರೆಯಬೇಕಾಗಿದೆ. ಕೆಳಗಿನ ಕೋಡ್ ಅನ್ನು ನಿಮ್ಮ ಫೈಲ್‌ನ** ಪ್ರಾರಂಭದಲ್ಲಿ** `import` ಹೇಳಿಕೆಗಳ ನಂತರ ಇರಿಸಿ:
     
     ```python
     def button_pressed(channel, event):
@@ -14,6 +14,6 @@
         explorerhat.light.off()
     ```
     
-    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed will be displayed in the Python shell and all lights will be switched off.
+    ವೇರಿಯಬಲ್(variable) `channel` ಒತ್ತಿದ ಗುಂಡಿಯ ಸಂಖ್ಯೆಯನ್ನು ಒಳಗೊಂಡಿದೆ (1-4). ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂ ಅನ್ನು ಪರೀಕ್ಷಿಸಿ ಮತ್ತು ನೀವು ಗುಂಡಿಯನ್ನು ಒತ್ತಿದಾಗ, ನೀವು ಒತ್ತಿದ ಗುಂಡಿಯ ಸಂಖ್ಯೆಯನ್ನು Python ಶೆಲ್‌ನಲ್ಲಿ ಪ್ರದರ್ಶಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಎಲ್ಲಾ ದೀಪಗಳನ್ನು ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಲಾಗುತ್ತದೆ ಎಂದು ನೀವು ನೋಡಬೇಕು.
     
-    ![A message telling you which button was pressed](images/pressed-button.png)
+    ![ಯಾವ ಗುಂಡಿಯನ್ನು ಒತ್ತಲಾಗಿದೆ ಎಂದು ಹೇಳುವ ಸಂದೇಶ](images/pressed-button.png)
