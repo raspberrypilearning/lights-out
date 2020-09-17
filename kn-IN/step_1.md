@@ -1,18 +1,18 @@
-## What you will make
+## ನೀವು ಏನು ಮಾಡುವಿರಿ
 
-In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT.
+ಈ ಸಂಪನ್ಮೂಲದಲ್ಲಿ ನೀವು ಮೋಜಿನ ಮತ್ತು ವೇಗದ Explorer HAT ರಿಯಾಕ್ಷನ್ ಆಟವನ್ನು ಹೇಗೆ ಮಾಡಬೇಕೆಂದು ಕಂಡುಕೊಳ್ಳುವಿರಿ.
 
-The Explorer HAT has touch buttons labelled from 1 to 4, and four LED lights in different colours. The aim of the game is to program the Explorer HAT to turn a light on at random, at which point the player must press the corresponding button to turn the light off. If the player is too slow, or if they press the wrong button, the game is over.
+Explorer HAT‌ನಲ್ಲಿ 1 ರಿಂದ 4 ರವರೆಗೆ ಲೇಬಲ್ ಮಾಡಲಾದ ಟಚ್ ಬಟನ್ಗಳಿವೆ ಮತ್ತು ನಾಲ್ಕು ಎಲ್ಇಡಿ ದೀಪಗಳು ವಿಭಿನ್ನ ಬಣ್ಣಗಳಲ್ಲಿವೆ. ಇಷ್ಟ ಬಂದಂತೆ ದೀಪವನ್ನು ಆನ್ ಮಾಡಲು Explorer HAT ಅನ್ನು ಪ್ರೋಗ್ರಾಂ ಮಾಡುವುದು ಆಟದ ಉದ್ದೇಶವಾಗಿದೆ, ಆ ಸಮಯದಲ್ಲಿ ಆಟಗಾರನು ದೀಪವನ್ನು ಆಫ್ ಮಾಡಲು ಅನುಗುಣವಾದ ಗುಂಡಿಯನ್ನು ಒತ್ತಬೇಕು. ಆಟಗಾರನು ತುಂಬಾ ನಿಧಾನವಾಗಿದ್ದರೆ, ಅಥವಾ ಅವನು ತಪ್ಪು ಗುಂಡಿಯನ್ನು ಒತ್ತಿದರೆ, ಆಟವು ಮುಕ್ತಾಯವಾಗುತ್ತದೆ.
 
-## What you will learn
+## ನೀವು ಏನು ಕಲಿಯುವಿರಿ
 
-By creating this project with your Raspberry Pi you will learn:
+ಈ Project ಅನ್ನು Raspberry Pi ಇಂದ ಮಾಡುವುದರ ಮೂಲಕ ನೀವು ಕಲಿಯುವುದು ಏನೆಂದರೆ:
 
-- How to control lights on the Explorer HAT
-- How to detect when a button is pressed and which button was pressed
-- How to generate random numbers
-- How to simulate a timer using Python This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+- Explorer HAT ‌ನಲ್ಲಿ ದೀಪಗಳನ್ನು ನಿಯಂತ್ರಿಸುವುದು ಹೇಗೆ
+- ಯಾವಾಗ ಗುಂಡಿಯನ್ನು ಒತ್ತಲಾಗಿದೆ ಮತ್ತು ಯಾವ ಗುಂಡಿಯನ್ನು ಒತ್ತಲಾಗಿದೆ ಎಂದು ಕಂಡುಹಿಡಿಯುವುದು ಹೇಗೆ
+- Random ಸಂಖ್ಯೆಗಳನ್ನು ಹೇಗೆ ಉತ್ಪದಿಸುವುದು
+- ಈ ಯೋಜನೆಯು ಕೆಳಗಿನ ಅಂಶಗಳನ್ನು ಒಳಗೊಂಡಿದೆ: [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
-- [Combine programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)
+- [ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸಲು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ರಚನೆಗಳನ್ನು ಸಂಯೋಜಿಸಿ](https://www.raspberrypi.org/curriculum/programming/builder)
 
-- [Combine inputs and/or outputs to create projects or solve a problem](https://www.raspberrypi.org/curriculum/physical-computing/builder)
+- [ಯೋಜನೆಗಳನ್ನು ರಚಿಸಲು ಅಥವಾ ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸಲು ಇನ್‌ಪುಟ್‌ಗಳು ಮತ್ತು / ಅಥವಾ ಔಟ್ ಪುಟ್ ಗಳನ್ನು ಸಂಯೋಜಿಸಿ](https://www.raspberrypi.org/curriculum/physical-computing/builder)
