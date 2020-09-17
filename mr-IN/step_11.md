@@ -1,8 +1,8 @@
-## What next?
+## पुढे काय?
 
-* Change the messages the player receives when they press the right or wrong button
-* Allow the player to play again if they lose, without having to press F5 to run the program again
-* Add a 'streak' counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game
-* Change the amount of time the player has to turn the light off to be a randomly chosen number
-* Allow the user to choose a difficulty level, and alter the time they are allowed depending on the difficulty level they chose
-* Change your game to use the capacitive touch inputs on the Explorer HAT (5-8) so that instead of pressing the buttons, the user might have to press a banana, marshmallow, jelly baby, or another capacitive touch object
+* जेव्हा खेळाडू बरोबर किंवा चुकीचे बटण दाबतात तेव्हा त्यांना मिळणारे संदेश बदला
+* खेळाडूला हरल्यावर F5 दाबून पुन्हा प्रोग्रॅम चालू न करता देखील पुन्हा खेळू द्या
+* 'स्ट्रीक' काउंटर जोडा जो प्रत्येक वेळी दिवा बंद झाल्यावर एक ने संख्या वाढवतो, आणि खेळ गमावताना त्यांनी किती दिवे सलग यशस्वीरित्या बंद केले आहेत हे वापरणाऱ्याला सांगतो
+* अनियमितरित्या निवडलेली संख्या होण्यासाठी खेळाडूला किती वेळ लाईट बंद करावा लागतो त्याचे प्रमाण बदला
+* वापरकर्त्यास एक अडचण पातळी निवडण्यास द्या आणि त्यांनी निवडलेल्या अडचणीच्या पातळीवर अवलंबून त्यांना परवानगी दिलेली वेळ बदलू द्या
+* एक्सप्लोरर हॅट (५-८) वर कॅपेसिटिव्ह टच इनपुट वापरण्यासाठी आपला खेळ बदला म्हणजे बटणे दाबण्याऐवजी वापरकर्त्याला केळी, मार्शमॅलो, जेली बेबी किंवा इतर कॅपेसिटिव टच वस्तू दाबता येतील
