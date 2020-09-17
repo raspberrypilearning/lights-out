@@ -1,12 +1,12 @@
-## Pressing the button
+## बटण दाबणे
 
-- You need to know when the player presses a button on the Explorer HAT, and which button it was that they pressed. At the **bottom** of your code, add this line:
+- खेळाडू एक्सप्लोरर हॅटवर बटण केव्हा दाबलेे आणि कोणते बटण दाबले हे आपल्याला माहित असणे आवश्यक आहे. आपल्या कोडच्या **तळाशी** ही ओळ जोडा:
     
     ```python
     explorerhat.touch.pressed(button_pressed)
     ```
 
-- When a button is pressed, the `button_pressed` function will be called, so you need to write this function. Put the following code at the **start** of your file, just after the `import` statements:
+- जेव्हा बटण दाबले जाते, तेव्हा `button_pressed` हे फंक्शन वापरले जाते, म्हणून तुम्हाला हे फंक्शन लिहावे लागेल. खालील कोड फाईल च्या **Start(सुरवात) ** ला ठेवा, `import` विधानाच्या लगेचच खालोखाली:
     
     ```python
     def button_pressed(channel, event):
@@ -14,6 +14,6 @@
         explorerhat.light.off()
     ```
     
-    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed will be displayed in the Python shell and all lights will be switched off.
+    व्हेरिएबल `channel` मध्ये जे बटण दाबले गेले आहे त्यामध्ये संख्या (१-४) आहे. आपला प्रोग्रॅम तपासून पहा आणि तुम्हाला हे दिसायला हवे कि जेव्हा तुम्ही एखादा बटण दाबता, त्या दाबलेल्या बटणाची संख्या Python शेल मध्ये प्रदर्शित होईल आणि सर्व दिवे बंद होतील.
     
-    ![A message telling you which button was pressed](images/pressed-button.png)
+    ![कोणते बटण दाबला गेला ते सांगणारा संदेश](images/pressed-button.png)
