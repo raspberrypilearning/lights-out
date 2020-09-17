@@ -1,18 +1,18 @@
-## Using the random library
+## Random ಗ್ರಂಥಾಲಯವನ್ನು ಬಳಸುವುದು
 
-This would be a pretty easy game if the lights always came on in the same order, for the same length of time! To make it as tricky as possible for the player, you need to add some randomness. You will randomize which light is turned on, and how long the program will wait before turning the next light on.
+ದೀಪಗಳು ಯಾವಾಗಲೂ ಒಂದೇ ಕ್ರಮದಲ್ಲಿ, ಅದೇ ಸಮಯದವರೆಗೆ ಬಂದರೆ ಇದು ಬಹಳ ಸುಲಭವಾದ ಆಟವಾಗಿದೆ! ಆಟಗಾರನನ್ನುಸಾಧ್ಯವಾದಷ್ಟು ಗೊಂದಲಗೊಳಿಸಲು, ನೀವು ಸ್ವಲ್ಪ ಅವ್ಯಕ್ತತೆ(randomness) ಅನ್ನು ಸೇರಿಸುವ ಅಗತ್ಯವಿದೆ. ಯಾವ ದೀಪವನ್ನು ಆನ್ ಮಾಡಲಾಗಿದೆ ಮತ್ತು ಮುಂದಿನ ದೀಪವನ್ನು ಆನ್ ಮಾಡುವ ಮೊದಲು ಪ್ರೋಗ್ರಾಂ ಎಷ್ಟು ಸಮಯ ಕಾಯುತ್ತದೆ ಎಂಬುದನ್ನು ನೀವು randomizeಗೊಳಿಸುತ್ತೀರಿ.
 
-- To generate random numbers, you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. Delete all of the code beneath this (where you experimented with turning the lights on and off).
+- Random ಸಂಖ್ಯೆಗಳನ್ನು ರಚಿಸಲು, ನೀವು Python ‌ನ `random` ಗ್ರಂಥಾಲಯವನ್ನುಬಳಸಬೇಕಾಗುತ್ತದೆ. ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂನಲ್ಲಿರುವ ಈ ಸಾಲನ್ನು ಹುಡುಕಿ `from time import sleep` ಮತ್ತು ಅದರ ಕೆಳಗೆ `import random` ಎಂದು ಟೈಪ್ ಮಾಡಿ. ಇದರ ಕೆಳಗಿರುವ ಎಲ್ಲಾ ಕೋಡ್‌ಗಳನ್ನು ಅಳಿಸಿ (ಎಲ್ಲಿ ನೀವು ದೀಪಗಳನ್ನು ಆನ್ ಮತ್ತು ಆಫ್ ಮಾಡುವ ಪ್ರಯೋಗ ಮಾಡಿದ್ದಿರೋ ಅಲ್ಲಿ).
 
-- First, you will ask Python to choose a random light to turn on. Add this code to your program:
+- ಮೊದಲಿಗೆ, ನೀವು Python ಅನ್ನು random ದೀಪವನ್ನುಆಯ್ಕೆ ಮಾಡಿ, ಆನ್ ಮಾಡಲು ಕೇಳುತ್ತೀರಿ. ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂಗೆ ಈ ಕೋಡ್ ಸೇರಿಸಿ:
     
     ```python
     light = random.randint(1,4)
     ```
     
-    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`.
+    ಈ ಕೋಡ್ 1 ಮತ್ತು 4 ರ ನಡುವೆ ಯಾವುದೊ ಒಂದು ಪೂರ್ಣಾಂಕವನ್ನು (ಸಂಪೂರ್ಣ ಸಂಖ್ಯೆ) ಆಯ್ಕೆ ಮಾಡುತ್ತದೆ ಮತ್ತು ಅದನ್ನು ವೇರಿಯಬಲ್(Variable) ` light ` ಗೆ ನಿಯೋಜಿಸುತ್ತದೆ.
 
-- Now add some code to turn one light on depending on the number which was randomly chosen. Can you finish off the rest of the code? Note that 3 is the red light and 4 is the green light:
+- ಹಿಂದಿನ ಹಂತದಲ್ಲಿ ಆಯ್ಕೆ ಮಾಡಿದ ಸಂಖ್ಯೆಯನ್ನು ಅವಲಂಬಿಸಿ ಒಂದು ದೀಪವನ್ನು ಆನ್ ಮಾಡಲು ಈ ಕೋಡ್ ಸೇರಿಸಿ. ಉಳಿದ ಕೋಡ್ ಅನ್ನು ನೀವು ಮುಗಿಸಬಹುದೇ? 3 ಕೆಂಪು ದೀಪ ಮತ್ತು 4 ಹಸಿರು ದೀಪ ಎಂಬುದನ್ನು ಗಮನಿಸಿ:
     
     ```python
     if light == 1:
@@ -21,11 +21,11 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.light.yellow.on()
     ```
     
-    Run your program several times. Check that, each time the program runs, a different light is randomly chosen. The light should turn on immediately.
+    ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂ ಅನ್ನು ಹಲವಾರು ಬಾರಿ ಚಲಾಯಿಸಿ (Run). ಪ್ರತಿ ಬಾರಿ ಪ್ರೋಗ್ರಾಂ ಚಾಲನೆಯಲ್ಲಿರುವಾಗ, ವಿಭಿನ್ನ ದೀಪವು ಆಯ್ಕೆಗೊಳ್ಳುತ್ತಿರುವುದನ್ನು ಗಮನಿಸಿ. ದೀಪವು ತಕ್ಷಣ ಆನ್ ಆಗಬೇಕು.
 
-- To make the game more fun, there needs to be an unpredictable gap between the lights turning on, so let's add some code to make the program wait a random length of time before turning on the next light:
+- ಆಟವನ್ನು ಹೆಚ್ಚು ಮೋಜು ಮಾಡಲು, ದೀಪಗಳನ್ನು ಆನ್ ಮಾಡುವ ನಡುವೆ ಅನಿರೀಕ್ಷಿತ ಅಂತರವಿರಬೇಕು, ಆದ್ದರಿಂದ ಮುಂದಿನ ದೀಪವನ್ನು ಆನ್ ಮಾಡುವ ಮೊದಲು ಪ್ರೋಗ್ರಾಂ ಅಖಚಿತ(random) ಸಮಯವನ್ನು ಕಾಯುವಂತೆ ಮಾಡಲು ಕೆಲವು ಕೋಡ್ ಅನ್ನು ಸೇರಿಸೋಣ:
     
-    Underneath the code where you chose which light to turn on, add two new lines of code:
+    ನೀವು ಯಾವ ದೀಪವನ್ನುಆನ್ ಮಾಡಬೇಕೆಂದು ಆಯ್ಕೆಮಾಡಿದ ಕೋಡ್‌ನ ಕೆಳಗೆ, ಎರಡು ಹೊಸ ಸಾಲುಗಳನ್ನು ಸೇರಿಸಿ:
     
     ```python
     light = random.randint(1,4)     
@@ -34,4 +34,4 @@ This would be a pretty easy game if the lights always came on in the same order,
     sleep(wait_for_next)
     ```
     
-    This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and three and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
+    ಈ ಸಮಯದಲ್ಲಿ ನೀವು ` random.uniform` ಅನ್ನು ಬಳಸುತ್ತಿರುವಿರಿ,ಇದು ನಿಮಗೆ ದಶಮಾಂಶ ಸಂಖ್ಯೆಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ. ಮೇಲಿನ ಕೋಡ್‌ನಲ್ಲಿ, Python ಅರ್ಧ (0.5) ಮತ್ತು ಮೂರೂವರೆ (3.5) ನಡುವೆ ಇರಬಹುದಾದ ಸಂಖ್ಯೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡುತ್ತದೆ ಮತ್ತು ನಂತರ ಆ ಸಂಖ್ಯೆಯ ಸೆಕೆಂಡುಗಳವರೆಗೆ ಕಾಯುತ್ತದೆ. ನಿಮ್ಮಆಟಗಾರನಿಗೆ ಹೆಚ್ಚು (ಅಥವಾ ಕಡಿಮೆ) ಗೊಂದಲಗೊಳಿಸಲು ಬಯಸಿದರೆ ಈ ಸಂಖ್ಯೆಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು!
