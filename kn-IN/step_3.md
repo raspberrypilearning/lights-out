@@ -1,5 +1,5 @@
-## Lights Out!
+## ದೀಪಗಳನ್ನು ಆರಿಸುವ ಆಟ(ಲೈಟ್ಸ್ ಔಟ್)!
 
-In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT.
+ಈ ಸಂಪನ್ಮೂಲದಲ್ಲಿ ನೀವು ಮೋಜಿನ ಮತ್ತು ವೇಗದ Explorer HAT ರಿಯಾಕ್ಷನ್ ಆಟವನ್ನು ಹೇಗೆ ಮಾಡಬೇಕೆಂದು ಕಂಡುಕೊಳ್ಳುವಿರಿ.
 
-The Explorer HAT has touch buttons labelled from 1 to 4, and four LED lights in different colours. The aim of the game is to program the Explorer HAT to turn a light on at random, at which point the player must press the corresponding button to turn the light off. If the player is too slow, or if they press the wrong button, the game is over.
+Explorer HAT‌ನಲ್ಲಿ 1 ರಿಂದ 4 ರವರೆಗೆ ಲೇಬಲ್ ಮಾಡಲಾದ ಟಚ್ ಬಟನ್ಗಳಿವೆ ಮತ್ತು ನಾಲ್ಕು ಎಲ್ಇಡಿ ದೀಪಗಳು ವಿಭಿನ್ನ ಬಣ್ಣಗಳಲ್ಲಿವೆ. ಇಷ್ಟ ಬಂದಂತೆ ದೀಪವನ್ನು ಆನ್ ಮಾಡಲು ಎಕ್ಸ್‌ಪ್ಲೋರರ್ ಹ್ಯಾಟ್ ಅನ್ನು ಪ್ರೋಗ್ರಾಂ ಮಾಡುವುದು ಆಟದ ಉದ್ದೇಶವಾಗಿದೆ, ಆ ಸಮಯದಲ್ಲಿ ಆಟಗಾರನು ದೀಪವನ್ನು ಆಫ್ ಮಾಡಲು ಅನುಗುಣವಾದ ಗುಂಡಿಯನ್ನು ಒತ್ತಬೇಕು. ಆಟಗಾರನು ತುಂಬಾ ನಿಧಾನವಾಗಿದ್ದರೆ, ಅಥವಾ ಅವನು ತಪ್ಪು ಗುಂಡಿಯನ್ನು ಒತ್ತಿದರೆ, ಆಟವು ಮುಕ್ತಾಯವಾಗುತ್ತದೆ.
