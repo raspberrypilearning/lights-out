@@ -1,18 +1,18 @@
-## Using the random library
+## अनियमित लायब्ररी वापरणे
 
-This would be a pretty easy game if the lights always came on in the same order, for the same length of time! To make it as tricky as possible for the player, you need to add some randomness. You will randomize which light is turned on, and how long the program will wait before turning the next light on.
+हा खेळ खूप सोपा होईल जर दिवे नेहमी एकाच क्रमेने, एकाच कालावधी साठी आले! हे प्लेअरसाठी शक्य तितके अवघड बनविण्यासाठी आपल्याला काही अनियमितता जोडण्याची आवश्यकता आहे. आपण कोणता दिवा चालू करायचा, आणि पुढील दिवा चालू करण्यापूर्वी किती अवधीसाठी प्रोग्रॅम थांबुन राहील याची अनियमितता करू.
 
-- To generate random numbers, you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. Delete all of the code beneath this (where you experimented with turning the lights on and off).
+- अनियमित संख्या उत्पन्न करण्यासाठी, तुम्हाला Pythonच्या `random` लायब्ररीचा वापर करावा लागेल. आपल्या प्रोग्राममध्ये `from time import sleep` हि ओळ शोधा, आणि त्या खाली `import random` टाइप करा. या खाली असलेला सर्व कोड काढून टाका (जिथे आपण दिवे चालू आणि बंद करण्याचा प्रयोग केला होता).
 
-- First, you will ask Python to choose a random light to turn on. Add this code to your program:
+- प्रथम, आपण Pythonला एक अनियमित दिवा निवडून चालू करण्यासाठी सांगाल. आपल्या प्रोग्राममध्ये हा कोड जोडा:
     
     ```python
     light = random.randint(1,4)
     ```
     
-    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`.
+    हा कोड १ ते ४ दरम्यान अनियमित पूर्णांक (संपूर्ण संख्या) निवडतो आणि त्यास `light` व्हेरिएबलला नेमून देतो.
 
-- Now add some code to turn one light on depending on the number which was randomly chosen. Can you finish off the rest of the code? Note that 3 is the red light and 4 is the green light:
+- आता अनियमितपणे निवडलेल्या संख्येनुसार एक दिवा चालू करण्यासाठी काही कोड जोडा. आपण उर्वरित कोड पूर्ण करू शकता? लक्षात ठेवा की ३ हा लाल दिवा आहे आणि ४ हा हिरवा दिवा आहे:
     
     ```python
     if light == 1:
@@ -21,11 +21,11 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.light.yellow.on()
     ```
     
-    Run your program several times. Check that, each time the program runs, a different light is randomly chosen. The light should turn on immediately.
+    आपला प्रोग्रॅम बर्‍याच वेळा चालवा. प्रत्येक वेळी प्रोग्राम चालू केल्यावर, वेगळा दिवा अनियमितपणे निवडला जात असल्याचे तपासा. दिवे पटकन चालू व्हायला हवेत.
 
-- To make the game more fun, there needs to be an unpredictable gap between the lights turning on, so let's add some code to make the program wait a random length of time before turning on the next light:
+- खेळ अधिक मनोरंजक बनविण्यासाठी, दिवे चालू होण्या दरम्यान एक अनपेक्षित अंतर असणे आवश्यक आहे, म्हणून चला पुढील दिवा चालू करण्यापूर्वी प्रोग्रामला अनियमित वेळेसाठी वाट बघण्याकरिता काही कोड जोडूयात:
     
-    Underneath the code where you chose which light to turn on, add two new lines of code:
+    तुम्ही कुठचा दिवा चालू करायचा याच्या निवडीच्या कोडखाली, दोन नवीन ओळी जोडा:
     
     ```python
     light = random.randint(1,4)     
@@ -34,4 +34,4 @@ This would be a pretty easy game if the lights always came on in the same order,
     sleep(wait_for_next)
     ```
     
-    This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and three and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
+    यावेळी आपण `random.uniform` हे फंक्शन वापर करीत आहोत जे तुम्हाला लहान (अपूर्णांक) संख्या निवडण्याची सोय करून देते. वरील कोडमध्ये Python अशी एक संख्या निवडतो जी अर्धा (०. ५) ते साडेतीन (३. ५) दरम्यान काहीही असू शकते आणि नंतर तेवढ्या सेकंदासाठी वाट पाहतो. आपण आपल्या प्लेअरसोबत कमी किंवा जास्त वाईट वागायचे असल्यास आपण ही मूल्ये बदलू शकता!
