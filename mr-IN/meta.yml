@@ -1,7 +1,7 @@
 ---
-title: Lights out!
+title: दिवे बंद!
 hero_image: images/banner.png
-description: In this resource you will find out how to make a fun and fast-paced Explorer HAT reaction game
+description: या संसाधनात आपल्याला मजेदार आणि वेगवान एक्सप्लोरर एचएटी (Explorer HAT) प्रतिक्रिया खेळ कसा बनवायचा ते आढळेल
 original_url: https://raspberrypi.org/learning/lights-out
 theme: navy
 duration: 2
@@ -18,24 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: परिचय
   - 
-    title: What you will need
+    title: तुम्हाला कशाची आवश्यकता लागेल
   - 
-    title: Lights Out!
+    title: दिवे बंद!
   - 
-    title: 'Setting up '
+    title: 'उभारणे '
   - 
-    title: 'Turning lights on '
+    title: 'दिवे चालू करणे '
   - 
-    title: Using the random library
+    title: अनियमित लायब्ररी वापरणे
   - 
-    title: Pressing the button
+    title: बटण दाबणे
   - 
-    title: Lots of lights!
+    title: खूप सारे दिवे!
   - 
-    title: Adding a timer
+    title: टाइमर जोडणे
   - 
-    title: But was it the right button?
+    title: पण ते बटन बरोबर होते का?
   - 
-    title: What next?
+    title: पुढे काय?
