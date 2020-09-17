@@ -1,8 +1,8 @@
-## What next?
+## ಮುಂದೆ ಏನು?
 
-* Change the messages the player receives when they press the right or wrong button
-* Allow the player to play again if they lose, without having to press F5 to run the program again
-* Add a 'streak' counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game
-* Change the amount of time the player has to turn the light off to be a randomly chosen number
-* Allow the user to choose a difficulty level, and alter the time they are allowed depending on the difficulty level they chose
-* Change your game to use the capacitive touch inputs on the Explorer HAT (5-8) so that instead of pressing the buttons, the user might have to press a banana, marshmallow, jelly baby, or another capacitive touch object
+* ಆಟಗಾರನು ಸರಿಯಾದ ಅಥವಾ ತಪ್ಪು ಗುಂಡಿಯನ್ನು ಒತ್ತಿದಾಗ ಸ್ವೀಕರಿಸುವ ಸಂದೇಶಗಳನ್ನು ಬದಲಾಯಿಸಿ
+* ಆಟಗಾರನು ಸೋತರೆ, F5 ಅನ್ನು ಒತ್ತದೆ ಮತ್ತೆ ಆಡಲು ಪ್ರೋಗ್ರಾಂ ಮೂಲಕ ಅನುವು ಮಾಡಿ ಕೊಡಿ
+* 'ಸ್ಟ್ರೀಕ್' ಕೌಂಟರ್ (streak counter) ಅನ್ನು ಹಾಕಿ. ಅದು ಪ್ರತಿ ಬಾರಿ ದೀಪವನ್ನು ಆಫ್ ಮಾಡಿದಾಗ ಒಂದನ್ನು ಸೇರಿಸುತ್ತದೆ ಮತ್ತು ಆಟವನ್ನು ಕಳೆದುಕೊಂಡಾಗ ಸತತವಾಗಿ ಎಷ್ಟು ದೀಪಗಳನ್ನು ಸರಿಯಾಗಿ ಆಫ್ ಮಾಡಲಾಗಿದೆ ಎಂದು ಆಟಗಾರನಿಗೆ ತಿಳಿಸುತ್ತದೆ
+* ಆಟಗಾರನು ದೀಪವನ್ನು ಆಫ್ ಮಾಡಬೇಕಾದ ಸಮಯವನ್ನು Random ಆಗಿ ಆಯ್ಕೆಮಾಡಿದ ಸಂಖ್ಯೆಗೆ ಬದಲಾಯಿಸಿ
+* ಕಷ್ಟದ ಮಟ್ಟವನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಆಟಗಾರನಿಗೆ ಅನುವು ಮಾಡಿ ಕೊಡಿ, ಮತ್ತು ಅವರು ಆಯ್ಕೆ ಮಾಡಿದ ಕಷ್ಟದ ಮಟ್ಟವನ್ನು ಅವಲಂಬಿಸಿ ಅವರಿಗೆ ನೀಡಿದ ಸಮಯವನ್ನು ಬದಲಾಯಿಸಿ
+* Explorer HAT ನಲ್ಲಿ ಕೆಪ್ಯಾಸಿಟಿವ್ ಟಚ್ ಇನ್‌ಪುಟ್‌ (5-8) ಗಳನ್ನು ಬಳಸುವ ಹಾಗೆ ನಿಮ್ಮ ಆಟವನ್ನು ಬದಲಾಯಿಸಿ. ಇದರಿಂದ ಗುಂಡಿಗಳನ್ನು ಒತ್ತುವ ಬದಲು, ಆಟಗಾರರು ಬಾಳೆಹಣ್ಣು, ಮಾರ್ಷ್ಮ್ಯಾಲೋ, ಜೆಲ್ಲಿ ಬೇಬಿ ಅಥವಾ ಇನ್ನೊಂದು ಕೆಪ್ಯಾಸಿಟಿವ್ ಟಚ್ ಆಬ್ಜೆಕ್ಟ್ ಅನ್ನು ಒತ್ತಬೇಕಾಗುತ್ತದೆ
