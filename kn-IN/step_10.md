@@ -1,6 +1,6 @@
-## But was it the right button?
+## ಆದರೆ ಅದು ಸರಿಯಾದ ಗುಂಡಿಯೇ?
 
-The final part of our game is to check if the button the player pressed was in fact the right button. To do this you need to edit your `button_pressed` function again. At the start of the function, add code to check whether the variable `light` (the number of the chosen light) is equal to the variable `channel` (the number of the button pressed):
+ನಮ್ಮ ಆಟದ ಅಂತಿಮ ಭಾಗವೆಂದರೆ ಆಟಗಾರನು ಒತ್ತಿದ ಬಟನ್ ವಾಸ್ತವವಾಗಿ ಸರಿಯಾದ ಗುಂಡಿಯೇ ಎಂದು ಪರಿಶೀಲಿಸುವುದು. ಇದನ್ನು ಮಾಡಲು ನೀವು ನಿಮ್ಮ`button_pressed` function ಅನ್ನು ಮತ್ತೆ ಬದಲಾಯಿಸಬೇಕು. Function ನಿನ ಪ್ರಾರಂಭದಲ್ಲಿ, ವೇರಿಯಬಲ್ (Variable) `light` (ಆಯ್ಕೆಮಾಡಿದ ದೀಪದ ಸಂಖ್ಯೆ) ಮತ್ತು ವೇರಿಯಬಲ್ (Variable) `channel` (ಒತ್ತಿದ ಗುಂಡಿಯ ಸಂಖ್ಯೆ) ಸಮಾನವಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ:
 
 ```python
 def button_pressed(channel, event):
@@ -12,8 +12,8 @@ def button_pressed(channel, event):
         game_in_progress = False
 ```
 
-Once again, you will need to tell Python that you want to change the value of the variable `game_in_progress` from inside the function by using the word `global`.
+ಮತ್ತೊಮ್ಮೆ, ವೇರಿಯೇಬಲ್(Variable) `game_in_progress` ನ ಮೌಲ್ಯವನ್ನು ನೀವು function ಒಳಗಿನಿಂದ ಬದಲಾಯಿಸಲು ಬಯಸುತ್ತೀರಿ ಎಂದು Python ‌ಗೆ ಸೂಚಿಸಲು `global` ಪದವನ್ನು ಬಳಸಬೇಕು.
 
-![The game should now detect whether the right button was pressed](images/press-right-button.png)
+![ಈಗ ಆಟವು, ನೀವು ಸರಿಯಾದ ಗುಂಡಿಯನ್ನು ಒತ್ತಿದ್ದೀರಾ ಎಂದು ಕಂಡುಹಿಡಿಯುವುದು](images/press-right-button.png)
 
-That's it! Now test your game with your friends.
+ಅಷ್ಟೇ! ಈಗ ನಿಮ್ಮ ಆಟವನ್ನು ಸ್ನೇಹಿತರೊಂದಿಗೆ ಪರೀಕ್ಷಿಸಿ.
