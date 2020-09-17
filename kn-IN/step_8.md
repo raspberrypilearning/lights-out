@@ -1,8 +1,8 @@
-## Lots of lights!
+## ತುಂಬಾ ದೀಪಗಳು!
 
-- Your program can choose and switch on a random light, and then switch it off when a button is pressed. Add a `game_in_progress` variable and a loop to your game so that lights keep being randomly chosen.
+- ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂ random ಆಗಿ ದೀಪವನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು ಮತ್ತು ಬದಲಾಯಿಸಬಹುದು, ತದನಂತರ ಗುಂಡಿಯನ್ನು ಒತ್ತಿದಾಗ ಅದನ್ನು ಆಫ್ ಮಾಡಿ. `game_in_progress` variable ಮತ್ತು ಲೂಪ್ ಅನ್ನು ನಿಮ್ಮ ಆಟಕ್ಕೆ ಸೇರಿಸುವುದರಿಂದ ದೀಪಗಳನ್ನು random ಆಗಿ ಆಯ್ಕೆ ಮಾಡಬಹುದು.
     
-    Your code so far should look like this:
+    ಇಲ್ಲಿಯ ತನಕ, ನಿಮ್ಮಕೋಡ್ ಈ ರೀತಿ ಕಾಣಿಸಬೇಕು:
     
     ```python
     import explorerhat
@@ -41,6 +41,6 @@
     
     ```
     
-    Notice that at the moment pressing **any** button will turn the light off, whether that button corresponds to the light's number or not! That's not quite right but we will fix it later.
+    ಈ ಸಮಯದಲ್ಲಿ ನೀವು ಗಮನಿಸಿದರೆ **ಯಾವುದೇ** ಬಟನ್ ಒತ್ತಿದರೂ, ದೀಪದ ಸಂಖ್ಯೆಗೆ ಅನುಗುಣವಾಗಿರಲಿ ಅಥವಾ ಇಲ್ಲದಿರಲಿ, ದೀಪವು ಆಫ್ ಆಗುತ್ತದೆ! ಅದು ಸರಿಯಲ್ಲ, ಆದರೆ ನಾವು ಅದನ್ನು ನಂತರ ಸರಿಪಡಿಸುತ್ತೇವೆ.
     
-    ![You can press any button to turn the light off](images/press-wrong-button.png)
+    ![ದೀಪವನ್ನು ಆಫ್ ಮಾಡಲು ನೀವು ಯಾವುದೇ ಗುಂಡಿಯನ್ನು ಒತ್ತ ಬಹುದು](images/press-wrong-button.png)
