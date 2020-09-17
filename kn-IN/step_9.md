@@ -1,10 +1,10 @@
-## Adding a timer
+## ಟೈಮರ್ ಅನ್ನು ಸೇರಿಸುವ ವಿಧಾನ
 
-After you switch a light on, you need to start a timer and check how long the player takes to press the button.
+ನೀವು ಬೆಳಕನ್ನು ಆನ್ ಮಾಡಿದ ನಂತರ, ನೀವು ಟೈಮರ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಬೇಕು ಮತ್ತು ಗುಂಡಿಯನ್ನು ಒತ್ತಲು ಆಟಗಾರನು ಎಷ್ಟು ಸಮಯ ತೆಗೆದುಕೊಳ್ಳುತ್ತಾನೆ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಬೇಕು.
 
-- Firstly, you will need to tell Python to import the time function. Next to your other `import` statements, add the line `from time import time` to tell Python you want to use the `time` function.
+- ಮೊದಲನೆಯದಾಗಿ, ನೀವು Python ಗೆ timer function ಆಮದು(import) ಮಾಡಲು ಹೇಳಬೇಕಾಗುತ್ತದೆ. ನಿಮ್ಮ ಇತರ `import` ಹೇಳಿಕೆಗಳ ಜೊತೆ, `from time import time` ಸಾಲನ್ನು ಸೇರಿಸುವ ಮೂಲಕ `time` function ಅನ್ನು ಬಳಸಲು ಬಯಸುತ್ತೀರಿ ಎಂದು Pythonಗೆ ತಿಳಿಸಿ.
 
-- Go to the place in your program just before the line of code checking for the button being pressed. Create a variable called `start` to record the current time: this will be provided by your Raspberry Pi and is pretty accurate.
+- ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂನಲ್ಲಿ ಗುಂಡಿಯನ್ನು ಒತ್ತಲಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸುವ ಕೋಡ್ ಇರುವ ಸ್ವಲ್ಪ ಮೊದಲ ಸಾಲಿಗೆ ಹೋಗಿ. ಪ್ರಸ್ತುತ ಸಮಯವನ್ನು ದಾಖಲಿಸಲು `start` ಎಂಬ ಹೊಸ ವೇರಿಯೇಬಲ್(Variable) ಅನ್ನು ಬಳಸಿ. ಪ್ರಸ್ತುತ ಸಮಯವನ್ನು ನಿಮ್ಮRaspberry Pi ಒದಗಿಸುತ್ತದೆ ಮತ್ತು ಇದು ತುಂಬಾ ನಿಖರವಾಗಿದೆ.
     
     ```python
     # ...other code above
@@ -16,7 +16,7 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
 
-- You can choose how many seconds the player will have to press the button once a light is turned on. Add a **constant** to your program just after the `game_in_progress` variable with the value you have chosen. We chose to allow our player 1.5 seconds:
+- ದೀಪವನ್ನು ಆನ್ ಮಾಡಿದ ನಂತರ ಆಟಗಾರನು ಎಷ್ಟು ಸೆಕೆಂಡುಗಳ ವರೆಗೆ ಗುಂಡಿಯನ್ನು ಒತ್ತಿಟ್ಟುಕೊಳ್ಳಬೇಕೆಂದು ನೀವು ಆಯ್ಕೆ ಮಾಡಬಹುದು. ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂನಲ್ಲಿ, ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಮೌಲ್ಯದ **constant** ಅನ್ನು `game_in_progress` ವೇರಿಯಬಲ್ (variable) ನಂತರ ಸೇರಿಸಿ. ನಮ್ಮ ಆಟಗಾರನಿಗೆ 1.5 ಸೆಕೆಂಡುಗಳನ್ನು ಅನುಮತಿಸಲು ನಾವು ಆರಿಸಿದ್ದೇವೆ:
     
     ```python
     game_in_progress = True
@@ -24,9 +24,9 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    The smaller the number, the quicker the player will have to be!
+    ಸಂಖ್ಯೆ ಚಿಕ್ಕದಾದಷ್ಟು, ಆಟಗಾರನು ಚುರುಕಾಗಿರಬೇಕಾಗುತ್ತದೆ!
 
-- Now add a loop to keep checking whether the user has run over the amount of time they were allowed to take. You can think of this loop's constant checking as being like someone on a long car journey who keeps asking "are we nearly there yet?", "are we there now?", "how about now?"!
+- ಆಟಗಾರನು ತನಗೆ ನೀಡಿದ ಸಮಯವನ್ನು ಮೀರಿದ್ದಾನೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಲು ಈಗ ಲೂಪ್ ಸೇರಿಸಿ. ಈ ಲೂಪಿನ ನಿರಂತರ ಪರಿಶೀಲನೆಯನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು, ನೀವು ದೀರ್ಘ ಕಾರು ಪ್ರಯಾಣದಲ್ಲಿ ಮತ್ತೊಬ್ಬರ ಜೊತೆಗೆ ಇರುತ್ತೀರಿ ಎಂದು ಊಹಿಸಿ. ಅವರು ಪದೆಪದೆ "ನಾವು ಇನ್ನೂ ಅಲ್ಲಿದ್ದೇವೆಯೇ?", "ನಾವು ಈಗ ಅಲ್ಲಿದ್ದೇವೆಯೇ?", "ಈಗ ಹೇಗೆ?" ಎಂದು ಪ್ರಶ್ನಿಸುವ ಹಾಗೆ!
     
     ```python
     ...
@@ -53,9 +53,9 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    Move the code for dealing with button presses to be part of the `else` statement. You will need to **indent** it for it to be in the right place.
+    ಬಟನ್ ಪ್ರೆಸ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಕೋಡ್ ಅನ್ನು `else` ಭಾಗಕ್ಕೆ ಸರಿಸಿ. ಅದು ಸರಿಯಾದ ಸ್ಥಳದಲ್ಲಿರಲು ನೀವು **indent** ಮಾಡಬೇಕಾಗುತ್ತದೆ.
 
-- If you run this code you will see that even if you press the correct button extremely quickly, the program will still declare you to have taken too long. This is because you haven't told the game to stop checking if time is up when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
+- ನೀವು ಈ ಕೋಡ್ ಅನ್ನು ಚಲಾಯಿಸಿದರೆ(run), ನೀವು ಸರಿಯಾದ ಗುಂಡಿಯನ್ನು ತ್ವರಿತವಾಗಿ ಒತ್ತಿದರೂ ಸಹ, ಪ್ರೋಗ್ರಾಂ ನಿಮಗೆ ತುಂಬಾ ಸಮಯ ತೆಗೆದುಕೊಂಡಿದೆ ಎಂದು ಘೋಷಿಸುತ್ತದೆ. ಇದಕ್ಕೆ ಕಾರ‌ಣವೇನೆಂದರೆ, ಗುಂಡಿಯನ್ನು ಒತ್ತಿದಾಗ ಸಮಯವಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸುವುದನ್ನು ನಿಲ್ಲಿಸುವಂತೆ ನೀವು ಆಟಕ್ಕೆ ಹೇಳದಿರುವುದು. ಗುಂಡಿಯನ್ನು ಒತ್ತಿದಾಗ ಟೈಮರ್ ಅನ್ನು ನಿಲ್ಲಿಸಲು `button_pressed` ಕೋಡ್ ಅನ್ನು ಬದಲಾಯಿಸಿ.
     
     ```python
         def button_pressed(channel, event):
@@ -68,4 +68,4 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    In this code, `global` allows us to change the value of the variable `waiting_for_press` from inside the function.
+    ಈ ಕೋಡ್‌ನಲ್ಲಿ, `global`, ನಮಗೆ `waiting_for_press` ವೇರಿಯೇಬಲ್(Variable) ಮೌಲ್ಯವನ್ನು ಬದಲಾಯಿಸಲು function ಒಳಗಿನಿಂದ ಅನುವು ಮಾಡುತ್ತದೆ.
