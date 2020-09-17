@@ -1,6 +1,6 @@
-## Turning lights on
+## ದೀಪಗಳನ್ನು ಹಚ್ಚುವುದು (ದೀಪಗಳನ್ನುಆನ್ ಮಾಡುವುದು)
 
-- You can use Python to tell the Explorer HAT which lights to turn on and off. Add the following new lines of code into your Python file, then run the program to see what it does:
+- ಯಾವ ದೀಪಗಳನ್ನು ಆನ್ ಮತ್ತು ಆಫ್ ಮಾಡಬೇಕೆಂದು Explorer Hat ‌ಗೆ ಹೇಳಲು ನೀವು Python ಬಳಸಬಹುದು. ನಿಮ್ಮ Python file ‌ಗೆ ಈ ಕೆಳಗಿನ ಹೊಸ ಸಾಲುಗಳನ್ನು ಸೇರಿಸಿ, ನಂತರ ಅದು ಏನು ಮಾಡುತ್ತದೆ ಎಂಬುದನ್ನು ನೋಡಲು ಪ್ರೋಗ್ರಾಂ ಅನ್ನು run ಮಾಡಿ:
     
     ```python
     import explorerhat
@@ -14,8 +14,8 @@
     sleep(5)
     ```
     
-    Can you work out how to do make your program do these things?
+    ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಮ್ ಈ ಕೆಲಸಗಳನ್ನು ಹೇಗೆ ಮಾಡಬೇಕೆಂಬುದುದರ ಬಗ್ಗೆ ನೀವು ಅಭ್ಯಾಸ ಮಾಡಬಹುದೇ?
     
-    - Turn the other coloured lights on individually (blue, yellow, green)
-    - Turn all of the lights off at once
-    - Change the length of time for which the lights are turned on and off
+    - ಇತರ ಬಣ್ಣದ ದೀಪಗಳನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಆನ್ ಮಾಡಿ (ನೀಲಿ, ಹಳದಿ, ಹಸಿರು)
+    - ಎಲ್ಲಾ ದೀಪಗಳನ್ನು ಒಮ್ಮೆಗೇ ಆಫ್ ಮಾಡಿ
+    - ದೀಪಗಳನ್ನು ಆನ್ ಮತ್ತು ಆಫ್ ಮಾಡಿದ ಸಮಯದ ಅವಧಿಯನ್ನು ಬದಲಾಯಿಸಿ
