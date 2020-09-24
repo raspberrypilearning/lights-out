@@ -1,0 +1,30 @@
+---
+title: ದೀಪಗಳನ್ನು ಆರಿಸುವ ಆಟ (ಲೈಟ್ಸ್ ಔಟ್)!
+hero_image: images/banner.png
+description: ಈ ಸಂಪನ್ಮೂಲದಲ್ಲಿ ನೀವು ಮೋಜಿನ ಮತ್ತು ವೇಗದ Explorer HAT ರಿಯಾಕ್ಷನ್ ಆಟವನ್ನು ಹೇಗೆ ಮಾಡಬೇಕೆಂದು ಕಂಡುಕೊಳ್ಳುವಿರಿ
+original_url: https://raspberrypi.org/learning/lights-out
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-2, manufacture-0, community-0
+interests: games
+technologies: raspberry-pi, electronic-components, python
+site_areas: projects
+hardware: raspberry-pi, electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: ಪರಿಚಯ
+  - title: ನಿಮಗೆ ಬೇಕಾದುದು
+  - title: ದೀಪಗಳನ್ನು ಆರಿಸುವ ಆಟ (ಲೈಟ್ಸ್ ಔಟ್)!
+  - title: 'ಪೂರ್ವ ಸಿದ್ಧತೆ '
+  - title: 'ದೀಪಗಳನ್ನು ಹಚ್ಚುವುದು... (ದೀಪಗಳನ್ನುಆನ್ ಮಾಡುವುದು) '
+  - title: Random ಗ್ರಂಥಾಲಯವನ್ನು ಬಳಸುವುದು
+  - title: ಗುಂಡಿಯನ್ನು ಒತ್ತುವುದು
+  - title: ಸಾಕಷ್ಟು ದೀಪಗಳು!
+  - title: ಟೈಮರ್ ಅನ್ನು ಸೇರಿಸುವ ವಿಧಾನ
+  - title: ಆದರೆ ಅದು ಸರಿಯಾದ ಗುಂಡಿಯೇ?
+  - title: ಮುಂದೆ ಏನು?
