@@ -1,19 +1,19 @@
-## But was it the right button?
+## ولكن هل كان الزر الصحيح؟
 
-The final part of our game is to check if the button the player pressed was in fact the right button. To do this you need to edit your `button_pressed` function again. At the start of the function, add code to check whether the variable `light` (the number of the chosen light) is equal to the variable `channel` (the number of the button pressed):
+الجزء الأخير من لعبتنا هو التحقق مما إذا كان الزر الذي ضغط عليه اللاعب هو الزر الصحيح بالفعل. للقيام بذلك، تحتاج إلى تعديل دالة `button_pressed` الخاصة بك مرة أخرى. في بداية الدالة، أضف تعليمة برمجية للتحقق مما إذا كان المتغير `light` (رقم الضوء المختار) يساوي المتغير `channel` (رقم الزر المضغوط):
 
 ```python
 def button_pressed(channel, event):
     if light == channel:
-        print("Well done")
+        print("احسنت")
     else:
-        print("Wrong button")
+        print("الزر خطأ!")
         global game_in_progress
         game_in_progress = False
 ```
 
-Once again, you will need to tell Python that you want to change the value of the variable `game_in_progress` from inside the function by using the word `global`.
+مرة أخرى ، ستحتاج إلى إخبار Python أنك تريد تغيير قيمة المتغير `game_in_progress` من داخل الدالة باستخدام الكلمة `global`.
 
-![The game should now detect whether the right button was pressed](images/press-right-button.png)
+![يجب أن تكتشف اللعبة الآن، ما إذا تم الضغط على الزر الصحيح](images/press-right-button.png)
 
-That's it! Now test your game with your friends.
+هذا كل شيء! اختبر الآن لعبتك مع أصدقائك.
