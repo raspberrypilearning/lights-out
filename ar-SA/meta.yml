@@ -1,7 +1,7 @@
 ---
-title: Lights out!
+title: إطفاء الأنوار!
 hero_image: images/banner.png
-description: In this resource you will find out how to make a fun and fast-paced Explorer HAT reaction game
+description: في هذا المورد سوف تتعلم كيفية صنع لعبة ممتعة وسريعة الاستجابة باستخدام Explorer HAT
 original_url: https://raspberrypi.org/learning/lights-out
 theme: navy
 duration: 2
@@ -18,24 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: المقدمة
   - 
-    title: What you will need
+    title: ما ستحتاج إليه
   - 
-    title: Lights Out!
+    title: إطفاء الأنوار!
   - 
-    title: 'Setting up '
+    title: 'الإعداد '
   - 
-    title: 'Turning lights on '
+    title: 'تشغيل الأضواء '
   - 
-    title: Using the random library
+    title: استخدام مكتبة random
   - 
-    title: Pressing the button
+    title: الضغط على الزر
   - 
-    title: Lots of lights!
+    title: الكثير من الأضواء!
   - 
-    title: Adding a timer
+    title: إضافة مؤقِت
   - 
-    title: But was it the right button?
+    title: ولكن هل كان الزر الصحيح؟
   - 
-    title: What next?
+    title: ما هي الخطوة التالية؟
