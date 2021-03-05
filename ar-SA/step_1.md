@@ -1,18 +1,18 @@
-## What you will make
+## ما الذي ستصنعه
 
-In this resource you will find out how to make a fun and fast-paced reaction game using the Explorer HAT.
+في هذا المورد سوف تتعلم كيفية صنع لعبة ممتعة وسريعة الاستجابة باستخدام Explorer HAT.
 
-The Explorer HAT has touch buttons labelled from 1 to 4, and four LED lights in different colours. The aim of the game is to program the Explorer HAT to turn a light on at random, at which point the player must press the corresponding button to turn the light off. If the player is too slow, or if they press the wrong button, the game is over.
+يحتوي Explorer HAT على أزرار لمس من 1 إلى 4، وأربعة أضواء LED بألوان مختلفة. الهدف من اللعبة هو برمجة Explorer HAT لتشغيل الضوء عشوائياً، عند هذه النقطة يجب على اللاعب الضغط على الزر المقابل لإيقاف تشغيل الضوء. إذا كان اللاعب بطيئًا جدًا ، أو إذا ضغطوا على الزر الخطأ ، تنتهي اللعبة.
 
-## What you will learn
+## ما الذي ستتعلمه
 
-By creating this project with your Raspberry Pi you will learn:
+من خلال إنشاء هذا المشروع باستخدام Raspberry Pi الخاص بك، سوف تتعلم:
 
-- How to control lights on the Explorer HAT
-- How to detect when a button is pressed and which button was pressed
-- How to generate random numbers
-- How to simulate a timer using Python This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+- كيفية التحكم في الأضواء على Explorer HAT
+- كيفية اكتشاف وقت الضغط على الزر والزر الذي تم الضغط عليه
+- كيفية إنشاء أرقام عشوائية
+- كيفية محاكاة مؤقت باستخدام Python يغطي هذا المورد عناصر من السلاسل التالية من [المناهج الرقمية الخاصة بـ Raspberry Pi](https://www.raspberrypi.org/curriculum/):
 
-- [Combine programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)
+- [دمج الإنشاءات البرمجية لحل مشكلة](https://www.raspberrypi.org/curriculum/programming/builder)
 
-- [Combine inputs and/or outputs to create projects or solve a problem](https://www.raspberrypi.org/curriculum/physical-computing/builder)
+- [اجمع بين المدخلات و / أو المخرجات لإنشاء مشاريع أو حل مشكلة](https://www.raspberrypi.org/curriculum/physical-computing/builder)
