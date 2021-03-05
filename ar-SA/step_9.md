@@ -1,22 +1,22 @@
-## Adding a timer
+## إضافة مؤقِت
 
-After you switch a light on, you need to start a timer and check how long the player takes to press the button.
+بعد تشغيل الضوء، تحتاج إلى بدء تشغيل مؤقت والتحقق من الوقت الذي يستغرقه المشغل للضغط على الزر.
 
-- Firstly, you will need to tell Python to import the time function. Next to your other `import` statements, add the line `from time import time` to tell Python you want to use the `time` function.
+- أولاً، ستحتاج إلى إخبار Python باستيراد دالة time. بجانب عبارات `import` الاخرى، اضف السطر البرمجي `from time import time` لاخبار Python انك تريد استخدام دالة `Python`.
 
-- Go to the place in your program just before the line of code checking for the button being pressed. Create a variable called `start` to record the current time: this will be provided by your Raspberry Pi and is pretty accurate.
+- انتقل إلى المكان الموجود في برنامجك مباشرةً قبل سطر التعليمة البرمجية الخاصة بالتحقق من الزر الذي يتم الضغط عليه. قم بإنشاء متغير يسمى `start` لتسجيل الوقت الحالي: سيتم توفير هذا بواسطة Raspberry Pi الخاص بك وهو دقيق جدًا.
     
     ```python
-    # ...other code above
+    # ... التعليمات البرمجية الاخرى أعلاه
     
-    # Record the current time
+    # سجل الوقت الحالي
     start = time()
     
-    # ... other code below
+    # ... تعليمات برمجية اخرى ادناه
     
     ```
 
-- You can choose how many seconds the player will have to press the button once a light is turned on. Add a **constant** to your program just after the `game_in_progress` variable with the value you have chosen. We chose to allow our player 1.5 seconds:
+- يمكنك اختيار عدد الثواني التي سيتعين على المشغل فيها الضغط على الزر بمجرد تشغيل الضوء. اضف **constant** إلى برنامجك مباشرة بعد المتغير `game_in_progress` مع القيمة التي اخترتها. اخترنا السماح للاعبنا بـ 1.5 ثانية:
     
     ```python
     game_in_progress = True
@@ -24,28 +24,28 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    The smaller the number, the quicker the player will have to be!
+    كلما كان الرقم أصغر، كلما توجب على اللاعب ان يكون أسرع!
 
-- Now add a loop to keep checking whether the user has run over the amount of time they were allowed to take. You can think of this loop's constant checking as being like someone on a long car journey who keeps asking "are we nearly there yet?", "are we there now?", "how about now?"!
+- أضف الآن حلقة تكرارية للاستمرار في التحقق مما إذا كان المستخدم قد تجاوز مقدار الوقت المسموح له بأخذه. يمكنك أن تفكر في التحقق المستمر من هذه الحلقة التكرارية على أنها مثل شخص ما في رحلة طويلة بالسيارة، الذي يستمر في التساؤل "هل اقتربنا من الوصول بعد؟" ، "هل نحن هناك الآن؟" ، "ماذا عن الآن؟"!
     
     ```python
     ...
     
-    # Record the current time
+    # سجل الوقت الحالي
     start = time()
     
     waiting_for_press = True
     while waiting_for_press and game_in_progress:
     
-        # What's the time now?
+        # ما هو الوقت الآن؟
         now = time()
         time_taken = now - start
     
-        # Check if they have taken more time than they were allowed
+        # تحقق من انهم استغرقوا اكثر من الوقت  المحد
         if time_taken > TIME_ALLOWED:
-            print("You took too long!")
+            print(لقد استغرقت وقتاً طويلاً!")
             explorerhat.light.off()
-            game_in_progress = False    # Lose the game
+            game_in_progress = False    # خسر اللعبة
     
         else:
             explorerhat.touch.pressed(button_pressed)
@@ -53,9 +53,9 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    Move the code for dealing with button presses to be part of the `else` statement. You will need to **indent** it for it to be in the right place.
+    انقل التعليمة البرمجية للتعامل مع ضغطات الأزرار لتكون جزءًا من عبارة `else`. ستحتاج إلى ان تضيف **مسافة بادئة** لتكون في المكان المناسب.
 
-- If you run this code you will see that even if you press the correct button extremely quickly, the program will still declare you to have taken too long. This is because you haven't told the game to stop checking if time is up when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
+- إذا قمت بتشغيل هذه التعليمة البرمجية، فسترى أنه حتى إذا قمت بالضغط على الزر الصحيح بسرعة كبيرة ، فسيظل البرنامج يعلن أنك استغرقت وقتًا طويلاً. هذا لأنك لم تخبر اللعبة بالتوقف عن التحقق، مما إذا كان الوقت قد انتهى عند الضغط على الزر. قم بتغيير الدالة `button_pressed` لإخبار التعليمة البرمجية بإيقاف المؤقت عند الضغط على زر.
     
     ```python
         def button_pressed(channel, event):
@@ -68,4 +68,4 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    In this code, `global` allows us to change the value of the variable `waiting_for_press` from inside the function.
+    في هذه التعليمة البرمجية، `global` يسمح لنا بتغيير قيمة المتغير `waiting_for_press` من داخل الدالة.
