@@ -1,18 +1,18 @@
-## Using the random library
+## استخدام مكتبة random
 
-This would be a pretty easy game if the lights always came on in the same order, for the same length of time! To make it as tricky as possible for the player, you need to add some randomness. You will randomize which light is turned on, and how long the program will wait before turning the next light on.
+ستكون هذه لعبة سهلة جدًا إذا كانت الأضواء تضيء دائمًا بنفس الترتيب، لنفس طول المدة الزمنية! لجعل الأمر صعبًا قدر الإمكان على اللاعب، تحتاج إلى إضافة بعض العشوائية. سوف تقوم بترتيب الضوء الذي يتم تشغيله عشوائيًا، والمدة التي سينتظرها البرنامج قبل تشغيل الضوء التالي.
 
-- To generate random numbers, you need to use Python's `random` library. Find the line in your program that says `from time import sleep`, and underneath it type in `import random`. Delete all of the code beneath this (where you experimented with turning the lights on and off).
+- لإنشاء أرقام عشوائية، تحتاج إلى استخدام مكتبة `random` الخاصة بـ Python. ابحث عن السطر في برنامجك الذي يقول `from time import sleep`، واكتب أسفله `import random`. احذف كل التعليمات البرمجية الموجودة أسفل هذا (حيث قمت بتجربة تشغيل وإطفاء الأنوار).
 
-- First, you will ask Python to choose a random light to turn on. Add this code to your program:
+- أولاً، ستطلب من Python اختيار ضوء عشوائي لتشغيله. أضف هذه التعليمات البرمجية إلى برنامجك:
     
     ```python
     light = random.randint(1,4)
     ```
     
-    This code chooses a random integer (whole number) between 1 and 4 and assigns it to the variable `light`.
+    يختار هذا الرمز عددًا صحيحًا عشوائيًا (عدد صحيح) بين 1 و 4 ويخصصه للمتغير `light`.
 
-- Now add some code to turn one light on depending on the number which was randomly chosen. Can you finish off the rest of the code? Note that 3 is the red light and 4 is the green light:
+- أضف الآن بعض التعليمات البرمجية، لتشغيل ضوء واحد بناءً على الرقم الذي تم اختياره عشوائيًا. هل يمكنك إنهاء باقي التعليمات البرمجية؟ لاحظ أن 3 هو الضوء الأحمر و 4 هو الضوء الأخضر:
     
     ```python
     if light == 1:
@@ -21,11 +21,11 @@ This would be a pretty easy game if the lights always came on in the same order,
         explorerhat.light.yellow.on()
     ```
     
-    Run your program several times. Check that, each time the program runs, a different light is randomly chosen. The light should turn on immediately.
+    قم بتشغيل البرنامج الخاص بك عدة مرات. تحقق من أنه في كل مرة يتم فيها تشغيل البرنامج، يتم اختيار ضوء مختلف بشكل عشوائي. يجب أن يضيء الضوء على الفور.
 
-- To make the game more fun, there needs to be an unpredictable gap between the lights turning on, so let's add some code to make the program wait a random length of time before turning on the next light:
+- لجعل اللعبة أكثر متعة، يجب أن تكون هناك فجوة غير متوقعة بين الأضواء قيد التشغيل، لذلك دعونا نضيف بعض التعليمات البرمجية لجعل البرنامج ينتظر فترة زمنية عشوائية قبل تشغيل الضوء التالي:
     
-    Underneath the code where you chose which light to turn on, add two new lines of code:
+    أضف سطرين جديدين من التعليمات البرمجية، أسفل التعليمات البرمجية حيث اخترت الضوء المراد تشغيله:
     
     ```python
     light = random.randint(1,4)     
@@ -34,4 +34,4 @@ This would be a pretty easy game if the lights always came on in the same order,
     sleep(wait_for_next)
     ```
     
-    This time you are using the `random.uniform` function which allows you to choose numbers with fractional parts (decimals). In the code above, Python chooses a number which could be anything between half (0.5) and three and a half (3.5) and then waits for that number of seconds. You can change these values if you want to be more (or less) mean to your player!
+    هذه المرة تستخدم الدالة `random.uniform` التي تتيح لك اختيار الأرقام ذات الأجزاء الكسرية (الكسور العشرية). في التعليمة البرمجية أعلاه، يختار Python عددًا يمكن أن يكون بين النصف (0.5) وثلاثة ونصف (3.5) ثم ينتظر هذا العدد من الثواني. يمكنك تغيير هذه القيم، إذا كنت تريد أن تكون أكثر (أو أقل) لؤماً مع لاعبك!
