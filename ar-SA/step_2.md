@@ -1,17 +1,17 @@
-## What you will need
+## ما ستحتاج اليه
 
-### Hardware
+### الأجهزة
 
-* Explorer HAT
+* لوح Explorer HAT
 
-### Software
+### البرمجيات
 
-#### Software Installation
+#### تثبيت البرنامج
 
-To install the software you need, open a terminal window and run the following command:
+لتثبيت البرنامج الذي تحتاجه ، افتح نافذة طرفية وقم بتشغيل الأمر التالي:
 
 ```bash
 curl -sS get.pimoroni.com/explorerhat | bash
 ```
 
-You can find further instructions [here](https://github.com/pimoroni/explorer-hat)
+يمكنك العثور على مزيد من الارشادات [هنا](https://github.com/pimoroni/explorer-hat)
