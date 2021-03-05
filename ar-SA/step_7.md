@@ -1,12 +1,12 @@
-## Pressing the button
+## الضغط على الزر
 
-- You need to know when the player presses a button on the Explorer HAT, and which button it was that they pressed. At the **bottom** of your code, add this line:
+- تحتاج إلى معرفة متى يقوم اللاعب بالضغط على زر على Explorer HAT ، والزر الذي قام بالضغط عليه. أضف هذا السطر في الجزء **السفلي** من تعليماتك البرمجية:
     
     ```python
     explorerhat.touch.pressed(button_pressed)
     ```
 
-- When a button is pressed, the `button_pressed` function will be called, so you need to write this function. Put the following code at the **start** of your file, just after the `import` statements:
+- عند الضغط على زر، سيتم استدعاء دالة `button_pressed`، لذا تحتاج إلى كتابة هذه الدالة. ضع التعليمة البرمجية التالية في **بداية** ملفك ، مباشرة بعد عبارة `import`:
     
     ```python
     def button_pressed(channel, event):
@@ -14,6 +14,6 @@
         explorerhat.light.off()
     ```
     
-    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed will be displayed in the Python shell and all lights will be switched off.
+    يحتوي المتغير `channel` على رقم الزر، الذي تم الضغط عليه (1-4). اختبر برنامجك وسترى أنه عند الضغط على زر، سيتم عرض رقم الزر الذي ضغطت عليه في Python shell وسيتم إطفاء جميع الأضواء.
     
-    ![A message telling you which button was pressed](images/pressed-button.png)
+    ![رسالة تخبرك بالزر الذي تم الضغط عليه](images/pressed-button.png)
