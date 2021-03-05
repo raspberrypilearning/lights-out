@@ -3,15 +3,15 @@ from time import sleep
 from time import time 
 import random
 
-# The button_pressed function
+# دالة button_pressed
 def button_pressed(channel, event):
     
-    print("You pressed button "+str(channel) )
+    print("قمت بالضغط على زر"+str(channel) )
 
     if light == channel:
-        print("Well done")
+        print("احسنت")
     else:
-        print("Wrong button!")
+        print("الزر خطأ!")
         global game_in_progress
         game_in_progress = False
     
@@ -22,20 +22,20 @@ def button_pressed(channel, event):
     
 
 
-# Keep playing the game until game_in_progress becomes False
+# استمر في لعب اللعبة حتى تصبح game_in_progress = False
 game_in_progress = True
 TIME_ALLOWED = 1.5
 
 while game_in_progress:
     
-    # Randomly choose a light
+    # اختر ضوءاً بشكل عشوائي
     light = random.randint(1,4)
 
-    # Choose how long to wait before turning on the light
+    # اختر مدة الانتظار قبل تشغيل الضوء
     wait_for_next = random.uniform(0.5, 3.5)
     sleep(wait_for_next)
 
-    # Turn on the selected light
+    # قم بتشغيل الضوء المحدد
     if light == 1:
         explorerhat.light.blue.on()
     elif light == 2:
@@ -46,22 +46,22 @@ while game_in_progress:
         explorerhat.light.green.on()
 
 
-    # Record the current time
+    # سجل الوقت الحالي
     start = time()
 
     waiting_for_press = True
     while waiting_for_press and game_in_progress:
 
-        # What's the time now?
+        # ما الوقت الآن؟
         now = time()
         time_taken = now - start
 
         if time_taken > TIME_ALLOWED:
-            print("You took too long!")
+            print("لقد استغرقت وقتاً طويلاً")
             explorerhat.light.off()
             game_in_progress = False
             
         else:            
-            # When a button is pressed, call the button_pressed function
+            # عند الضغط على زر، استدعِ الدالة button_pressed
             explorerhat.touch.pressed(button_pressed)
 
