@@ -1,7 +1,7 @@
 ---
-title: Lights out!
+title: Extinction des feux !
 hero_image: images/banner.png
-description: In this resource you will find out how to make a fun and fast-paced Explorer HAT reaction game
+description: Dans cette ressource, tu découvriras comment créer un jeu de réflexe amusant et rapide Explorer HAT
 original_url: https://raspberrypi.org/learning/lights-out
 theme: navy
 duration: 2
@@ -20,22 +20,22 @@ steps:
   - 
     title: Introduction
   - 
-    title: What you will need
+    title: Ce dont tu auras besoin
   - 
-    title: Lights Out!
+    title: Extinction des feux !
   - 
-    title: 'Setting up '
+    title: 'Configuration'
   - 
-    title: 'Turning lights on '
+    title: 'Allumer les lumières '
   - 
-    title: Using the random library
+    title: Utiliser le module random
   - 
-    title: Pressing the button
+    title: Appuyer sur le bouton
   - 
-    title: Lots of lights!
+    title: Beaucoup de lumières !
   - 
-    title: Adding a timer
+    title: Ajouter un minuteur
   - 
-    title: But was it the right button?
+    title: Mais était-ce le bon bouton ?
   - 
-    title: What next?
+    title: Et ensuite ?
