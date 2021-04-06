@@ -1,19 +1,19 @@
-## But was it the right button?
+## Mais était-ce le bon bouton ?
 
-The final part of our game is to check if the button the player pressed was in fact the right button. To do this you need to edit your `button_pressed` function again. At the start of the function, add code to check whether the variable `light` (the number of the chosen light) is equal to the variable `channel` (the number of the button pressed):
+La dernière partie de notre jeu est de vérifier si le bouton que le joueur a appuyé était en fait le bon bouton. Pour faire çà, tu dois modifier à nouveau ta fonction `button_pressed`. Au début de la fonction, ajouter du code pour vérifier si la variable `light` (le numéro de la lumière choisie) est égale à la variable `channel` (le numéro du bouton appuyé) :
 
 ```python
 def button_pressed(channel, event):
     if light == channel:
-        print("Well done")
+        print("Bien joué")
     else:
-        print("Wrong button")
+        print("Mauvais bouton")
         global game_in_progress
         game_in_progress = False
 ```
 
-Once again, you will need to tell Python that you want to change the value of the variable `game_in_progress` from inside the function by using the word `global`.
+De nouveau, tu devras dire à Python que tu souhaites modifier la valeur de la variable `game_in_progress` depuis l'intérieur de la fonction en utilisant le mot `global`.
 
-![The game should now detect whether the right button was pressed](images/press-right-button.png)
+![Le jeu devrait maintenant détecter si le bon bouton a été appuyé](images/press-right-button.png)
 
-That's it! Now test your game with your friends.
+C'est terminé ! Maintenant, teste ton jeu avec tes amis.
