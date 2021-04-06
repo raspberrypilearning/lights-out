@@ -1,19 +1,19 @@
-## Pressing the button
+## Appuyer sur le bouton
 
-- You need to know when the player presses a button on the Explorer HAT, and which button it was that they pressed. At the **bottom** of your code, add this line:
+- Tu dois savoir quand le joueur appuie sur un bouton de l'Explorer HAT, et sur quel bouton il a appuyé. Au **bas** de ton code, ajoute cette ligne :
     
     ```python
     explorerhat.touch.pressed(button_pressed)
     ```
 
-- When a button is pressed, the `button_pressed` function will be called, so you need to write this function. Put the following code at the **start** of your file, just after the `import` statements:
+- Lorsqu'un bouton est appuyé, la fonction `button_pressed` sera appelée, donc tu dois écrire cette fonction. Place le code suivant au **début** de ton fichier, juste après les instructions `import` :
     
     ```python
     def button_pressed(channel, event):
-        print("You pressed button " + str(channel) )
+        print("Tu as appuyé sur le bouton " + str(channel) )
         explorerhat.light.off()
     ```
     
-    The variable `channel` contains the number of the button that was pressed (1-4). Test your program and you should see that when you press a button, the number of the button you pressed will be displayed in the Python shell and all lights will be switched off.
+    La variable `channel` contient le numéro du bouton qui a été enfoncé (1-4). Teste ton programme et tu devrais voir que lorsque tu appuies sur un bouton, le numéro du bouton sur lequel tu as appuyé s'affiche dans le shell Python et toutes les lumières s'éteignent.
     
-    ![A message telling you which button was pressed](images/pressed-button.png)
+    ![Un message t'indiquant quel bouton a été appuyé](images/pressed-button.png)
