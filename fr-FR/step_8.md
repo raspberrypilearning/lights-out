@@ -9,7 +9,7 @@
     from time import sleep
     import random
     
-    # The button_pressed function
+    # button_pressed function
     def button_pressed(channel, event):
         print("Tu as appuyé " + str(channel) )
         explorerhat.light.off()
