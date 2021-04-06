@@ -1,22 +1,22 @@
-## Adding a timer
+## Ajouter un minuteur
 
-After you switch a light on, you need to start a timer and check how long the player takes to press the button.
+Une fois que tu allumes une lumière, tu dois démarrer un minuteur et vérifier combien de temps le joueur prend pour appuyer sur le bouton.
 
-- Firstly, you will need to tell Python to import the time function. Next to your other `import` statements, add the line `from time import time` to tell Python you want to use the `time` function.
+- Tout d'abord, tu devras dire à Python d'importer la fonction time (temps). À côté de tes autres instructions `import` , ajouter la ligne `from time import time` pour dire à Python que tu veux utiliser la fonction `time`.
 
-- Go to the place in your program just before the line of code checking for the button being pressed. Create a variable called `start` to record the current time: this will be provided by your Raspberry Pi and is pretty accurate.
+- Va à l'endroit de ton programme juste avant la ligne de code vérifiant le bouton sur lequel tu appuies. Crée une variable appelée `start` pour enregistrer l'heure actuelle : elle sera fournie par ton Raspberry Pi et est assez précise.
     
     ```python
-    # ...other code above
+    # ...autre code ci-dessus
     
-    # Record the current time
+    # Enregistre l'heure actuelle
     start = time()
     
-    # ... other code below
+    # ... autre code ci-dessous
     
     ```
 
-- You can choose how many seconds the player will have to press the button once a light is turned on. Add a **constant** to your program just after the `game_in_progress` variable with the value you have chosen. We chose to allow our player 1.5 seconds:
+- Tu peux choisir combien de secondes le joueur aura pour appuyer sur le bouton une fois la lumière allumée. Ajoute une **constante** à ton programme juste après la variable `game_in_progress` avec la valeur que tu as choisie. Nous avons choisi d'accorder à notre joueur 1,5 secondes :
     
     ```python
     game_in_progress = True
@@ -24,28 +24,28 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    The smaller the number, the quicker the player will have to be!
+    Plus le nombre est petit, plus le joueur devra être rapide !
 
-- Now add a loop to keep checking whether the user has run over the amount of time they were allowed to take. You can think of this loop's constant checking as being like someone on a long car journey who keeps asking "are we nearly there yet?", "are we there now?", "how about now?"!
+- Ajoute maintenant une boucle pour continuer à vérifier si l'utilisateur a dépassé le temps qui lui était imparti. La vérification constante de cette boucle peut être comparée à celle d'une personne qui, lors d'un long voyage en voiture, demande sans cesse : « On est bientôt arrivé ? », « On est arrivé maintenant ? », « Et maintenant ? ».
     
     ```python
     ...
     
-    # Record the current time
+    # Enregistre l'heure actuelle
     start = time()
     
     waiting_for_press = True
     while waiting_for_press and game_in_progress:
     
-        # What's the time now?
+        # Quelle heure est-il maintenant ?
         now = time()
         time_taken = now - start
     
-        # Check if they have taken more time than they were allowed
+        # Vérifie s'ils ont pris plus de temps qu'ils n'étaient autorisés.
         if time_taken > TIME_ALLOWED:
-            print("You took too long!")
+            print("Tu as pris trop de temps !")
             explorerhat.light.off()
-            game_in_progress = False    # Lose the game
+            game_in_progress = False    # Perd la partie
     
         else:
             explorerhat.touch.pressed(button_pressed)
@@ -53,13 +53,13 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    Move the code for dealing with button presses to be part of the `else` statement. You will need to **indent** it for it to be in the right place.
+    Déplace le code pour gérer les pressions sur les boutons pour qu'il fasse partie de l'instruction `else`. Tu devras **indenter** pour qu'il soit au bon endroit.
 
-- If you run this code you will see that even if you press the correct button extremely quickly, the program will still declare you to have taken too long. This is because you haven't told the game to stop checking if time is up when a button is pressed. Alter your `button_pressed` function to tell the code to stop the timer when a button is pressed.
+- Si tu exécutes ce code, tu verras que même si tu appuies sur le bon bouton très rapidement, le programme continuera de dire que tu as pris trop de temps. C'est parce que tu n'as pas dit au jeu d'arrêter de vérifier si le temps est écoulé quand un bouton est appuyé. Modifie ta fonction `button_pressed` pour dire au code d'arrêter le minuteur lorsqu'un bouton est appuyé.
     
     ```python
         def button_pressed(channel, event):
-            print("You pressed " + str(channel) )
+            print("Tu as appuyé " + str(channel) )
     
             explorerhat.light.off()
     
@@ -68,4 +68,4 @@ After you switch a light on, you need to start a timer and check how long the pl
     
     ```
     
-    In this code, `global` allows us to change the value of the variable `waiting_for_press` from inside the function.
+    Dans ce code, `global` nous permet de changer la valeur de la variable `waiting_for_press` depuis l'intérieur de la fonction.
