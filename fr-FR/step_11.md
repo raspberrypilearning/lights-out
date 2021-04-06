@@ -1,8 +1,8 @@
-## What next?
+## Et ensuite ?
 
-* Change the messages the player receives when they press the right or wrong button
-* Allow the player to play again if they lose, without having to press F5 to run the program again
-* Add a 'streak' counter which adds one every time a light is turned off, and tells the user how many lights they successfully turned off in a row when they lose the game
-* Change the amount of time the player has to turn the light off to be a randomly chosen number
-* Allow the user to choose a difficulty level, and alter the time they are allowed depending on the difficulty level they chose
-* Change your game to use the capacitive touch inputs on the Explorer HAT (5-8) so that instead of pressing the buttons, the user might have to press a banana, marshmallow, jelly baby, or another capacitive touch object
+* Modifier les messages que le joueur reçoit lorsqu'il appuie sur le bon ou le mauvais bouton
+* Permettre au joueur de jouer à nouveau s'il perd, sans avoir à appuyer sur F5 pour exécuter le programme à nouveau
+* Ajouter un compteur « série » qui ajoute un point à chaque fois qu'une lumière est éteinte et qui indique à l'utilisateur combien de lumières il a réussi à éteindre d'affilée lorsqu'il perd la partie
+* Modifier le temps dont dispose le joueur pour éteindre la lumière en un nombre choisi au hasard
+* Permettre à l'utilisateur de choisir un niveau de difficulté, et de modifier le temps qui lui est alloué en fonction du niveau de difficulté qu'il a choisi
+* Modifier ton jeu pour utiliser les entrées tactiles capacitives de l'Explorer HAT (5-8) de sorte qu'au lieu d'appuyer sur les boutons, l'utilisateur doive appuyer sur une banane, un marshmallow, un bonbon ou un autre objet tactile capacitif
