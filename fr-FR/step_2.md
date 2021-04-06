@@ -1,17 +1,17 @@
-## What you will need
+## Ce dont tu auras besoin
 
-### Hardware
+### Matériel
 
 * Explorer HAT
 
-### Software
+### Logiciel
 
-#### Software Installation
+#### Installation du logiciel
 
-To install the software you need, open a terminal window and run the following command:
+Pour installer le logiciel dont tu as besoin, ouvre une fenêtre de terminal et exécute la commande suivante :
 
 ```bash
 curl -sS get.pimoroni.com/explorerhat | bash
 ```
 
-You can find further instructions [here](https://github.com/pimoroni/explorer-hat)
+Tu peux trouver plus d'instructions [ici](https://github.com/pimoroni/explorer-hat)
