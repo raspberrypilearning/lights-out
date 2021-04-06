@@ -1,8 +1,8 @@
-## Lots of lights!
+## Beaucoup de lumières !
 
-- Your program can choose and switch on a random light, and then switch it off when a button is pressed. Add a `game_in_progress` variable and a loop to your game so that lights keep being randomly chosen.
+- Ton programme peut choisir et allumer une lumière aléatoire, puis l'éteindre quand on appuie sur un bouton. Ajoute une variable `game_in_progress` et une boucle à ton jeu afin que les lumières soient choisies aléatoirement.
     
-    Your code so far should look like this:
+    Ton code devrait ressembler à ceci :
     
     ```python
     import explorerhat
@@ -11,22 +11,22 @@
     
     # The button_pressed function
     def button_pressed(channel, event):
-        print("You pressed " + str(channel) )
+        print("Tu as appuyé " + str(channel) )
         explorerhat.light.off()
     
-    # Keep playing the game until game_in_progress becomes False
+    # Continue à jouer le jeu jusqu'à ce que game_in_progress devienne False
     game_in_progress = True
     
     while game_in_progress:
     
-        # Randomly choose the number of a light (1-4)
+        # Choisis aléatoirement le numéro de la lumière (1-4)
         light = random.randint(1, 4)
     
-        # Choose how long to wait before turning on the light
+        # Choisis le temps d'attente avant d'allumer la lumière.
         wait_for_next = random.uniform(0.5, 3.5)
         sleep(wait_for_next)
     
-        # Turn on the selected light
+        # Allume la lumière sélectionnée
         if light == 1:
             explorerhat.light.blue.on()
         elif light == 2:
@@ -36,11 +36,11 @@
         elif light == 4:
             explorerhat.light.green.on()
     
-        # When a button is pressed, call the button_pressed function
+        # Lorsqu'un bouton est appuyé, appeler la fonction button_pressed
         explorerhat.touch.pressed(button_pressed)
     
     ```
     
-    Notice that at the moment pressing **any** button will turn the light off, whether that button corresponds to the light's number or not! That's not quite right but we will fix it later.
+    Note qu'au moment d'appuyer sur **n'importe quel** bouton éteindra la lumière, que ce bouton corresponde ou non au numéro de la lumière ! Ce n'est pas tout à fait juste, mais nous le corrigerons plus tard.
     
-    ![You can press any button to turn the light off](images/press-wrong-button.png)
+    ![Tu peux appuyer sur n'importe quel bouton pour éteindre la lumière](images/press-wrong-button.png)
