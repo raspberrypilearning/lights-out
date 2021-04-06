@@ -1,13 +1,13 @@
-## Setting up
+## Configuration
 
-Before you start, make sure your Raspberry Pi is powered down and switched off.
+Avant de commencer, assure-toi que ton Raspberry Pi est éteint et débranché.
 
-- Carefully mount the Explorer HAT onto the GPIO pins on your Raspberry Pi, then boot the Pi.
+- Monte soigneusement l'Explorer HAT sur les broches GPIO de ton Raspberry Pi, puis démarre le Pi.
 
-- Open Python 3 from the Programming menu:
+- Ouvre Python 3 depuis le menu Programmation :
     
-    ![Opening Python 3](images/python3-app-menu.png)
+    ![Ouvrir Python 3](images/python3-app-menu.png)
 
-- Create a new file by clicking **File** > **New File** and type the code `import explorerhat` before pressing **F5** to run your program.
+- Crée un nouveau fichier en cliquant sur **Fichier** > **Nouveau fichier** et tape le code `import explorerhat` avant d'appuyer sur **F5** pour exécuter ton programme.
 
-If everything is working you should see a message saying "Explorer HAT Pro detected...". If not, check that you have [installed the software](what-you-will-need), and that you have connected your Explorer HAT correctly to the GPIO pins.
+Si tout fonctionne, tu devrais voir un message indiquant « Explorer HAT Pro détecté... ». Sinon, vérifie que tu as [installé le logiciel](what-you-will-need) et que tu as correctement connecté ton Explorer HAT aux broches GPIO.
