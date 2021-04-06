@@ -1,6 +1,6 @@
-## Turning lights on
+## Allumer les lumières
 
-- You can use Python to tell the Explorer HAT which lights to turn on and off. Add the following new lines of code into your Python file, then run the program to see what it does:
+- Tu peux utiliser Python pour indiquer à l'Explorer HAT les lumières à allumer et à éteindre. Ajoute les nouvelles lignes de code suivantes dans ton fichier Python, puis exécute le programme pour voir ce qu'il fait :
     
     ```python
     import explorerhat
@@ -14,8 +14,8 @@
     sleep(5)
     ```
     
-    Can you work out how to do make your program do these things?
+    Sais-tu trouver comment faire en sorte que ton programme fasse ces choses ?
     
-    - Turn the other coloured lights on individually (blue, yellow, green)
-    - Turn all of the lights off at once
-    - Change the length of time for which the lights are turned on and off
+    - Allumer les autres lumières colorées individuellement (bleu, jaune, vert)
+    - Éteindre toutes les lumières en même temps
+    - Modifier la durée de la mise en marche et de la désactivation des lumières
