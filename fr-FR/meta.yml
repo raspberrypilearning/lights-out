@@ -1,7 +1,8 @@
 ---
 title: Extinction des feux !
 hero_image: images/banner.png
-description: Dans cette ressource, tu découvriras comment créer un jeu de réflexe amusant et rapide Explorer HAT
+description: Dans cette ressource, tu découvriras comment créer un jeu de réflexe
+  amusant et rapide Explorer HAT
 original_url: https://raspberrypi.org/learning/lights-out
 theme: navy
 duration: 2
@@ -17,14 +18,16 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Introduction
-  - title: Ce dont tu auras besoin
-  - title: Extinction des feux !
-  - title: 'Configuration'
-  - title: 'Allumer les lumières'
-  - title: Utiliser le module random
-  - title: Appuyer sur le bouton
-  - title: Beaucoup de lumières !
-  - title: Ajouter un minuteur
-  - title: Mais était-ce le bon bouton ?
-  - title: Et ensuite ?
+- title: Introduction
+- title: Ce dont tu auras besoin
+  completion: engaged
+- title: Extinction des feux !
+- title: Configuration
+- title: Allumer les lumières
+- title: Utiliser le module random
+- title: Appuyer sur le bouton
+- title: Beaucoup de lumières !
+- title: Ajouter un minuteur
+  completion: internal
+- title: Mais était-ce le bon bouton ?
+- title: Et ensuite ?
