@@ -1,7 +1,8 @@
 ---
 title: إطفاء الأنوار!
 hero_image: images/banner.png
-description: في هذا المورد سوف تتعلم كيفية صنع لعبة ممتعة وسريعة الاستجابة باستخدام Explorer HAT
+description: في هذا المورد سوف تتعلم كيفية صنع لعبة ممتعة وسريعة الاستجابة باستخدام
+  Explorer HAT
 original_url: https://raspberrypi.org/learning/lights-out
 theme: navy
 duration: 2
@@ -17,14 +18,18 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: المقدمة
-  - title: ما ستحتاج إليه
-  - title: إطفاء الأنوار!
-  - title: 'الإعداد '
-  - title: 'تشغيل الأضواء '
-  - title: استخدام مكتبة random
-  - title: الضغط على الزر
-  - title: الكثير من الأضواء!
-  - title: إضافة مؤقِت
-  - title: ولكن هل كان الزر الصحيح؟
-  - title: ما التالي؟
+- title: المقدمة
+- title: ما ستحتاج إليه
+- title: إطفاء الأنوار!
+- title: 'الإعداد '
+  completion:
+  - engaged
+- title: 'تشغيل الأضواء '
+- title: استخدام مكتبة random
+- title: الضغط على الزر
+- title: الكثير من الأضواء!
+- title: إضافة مؤقِت
+- title: ولكن هل كان الزر الصحيح؟
+  completion:
+  - internal
+- title: ما التالي؟
