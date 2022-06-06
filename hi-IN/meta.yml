@@ -20,14 +20,16 @@ last_tested: 2017-01-01
 steps:
 - title: भूमिका
 - title: आपको किन चीजों की आवश्यकता होगी
-  completion: engaged
 - title: बत्तियां बुझाना!
 - title: स्थापना करना
+  completion:
+  - engaged
 - title: रोशनी चालू कर रहे है
 - title: अनियमित(random) लाइब्रेरी का उपयोग करना
 - title: बटन दबाना
 - title: बहुत सारी रोशनी!
 - title: एक टाइमर(timer) जोड़ना
-  completion: internal
 - title: लेकिन क्या यह सही बटन था?
+  completion:
+  - internal
 - title: आगे क्या?

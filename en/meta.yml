@@ -20,14 +20,16 @@ last_tested: 2017-01-01
 steps:
 - title: Introduction
 - title: What you will need
-  completion: engaged
 - title: Lights Out!
 - title: 'Setting up '
+  completion:
+  - engaged
 - title: 'Turning lights on '
 - title: Using the random library
 - title: Pressing the button
 - title: Lots of lights!
 - title: Adding a timer
-  completion: internal
 - title: But was it the right button?
+  completion:
+  - internal
 - title: What next?

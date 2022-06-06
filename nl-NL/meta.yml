@@ -20,14 +20,16 @@ last_tested: 2017-01-01
 steps:
 - title: Inleiding
 - title: Wat heb je nodig
-  completion: engaged
 - title: Lichten uit!
 - title: 'Instellen '
+  completion:
+  - engaged
 - title: 'Zet de lichten aan '
 - title: De random (willekeurig) bibliotheek gebruiken
 - title: Op de knop drukken
 - title: Veel lampjes!
 - title: Een timer toevoegen
-  completion: internal
 - title: Maar was het de juiste knop?
+  completion:
+  - internal
 - title: Wat kun je verder nog doen?

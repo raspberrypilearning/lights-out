@@ -20,14 +20,16 @@ last_tested: 2017-01-01
 steps:
 - title: المقدمة
 - title: ما ستحتاج إليه
-  completion: engaged
 - title: إطفاء الأنوار!
 - title: 'الإعداد '
+  completion:
+  - engaged
 - title: 'تشغيل الأضواء '
 - title: استخدام مكتبة random
 - title: الضغط على الزر
 - title: الكثير من الأضواء!
 - title: إضافة مؤقِت
-  completion: internal
 - title: ولكن هل كان الزر الصحيح؟
+  completion:
+  - internal
 - title: ما التالي؟

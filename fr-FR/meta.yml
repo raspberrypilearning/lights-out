@@ -20,14 +20,16 @@ last_tested: 2017-01-01
 steps:
 - title: Introduction
 - title: Ce dont tu auras besoin
-  completion: engaged
 - title: Extinction des feux !
 - title: Configuration
+  completion:
+  - engaged
 - title: Allumer les lumières
 - title: Utiliser le module random
 - title: Appuyer sur le bouton
 - title: Beaucoup de lumières !
 - title: Ajouter un minuteur
-  completion: internal
 - title: Mais était-ce le bon bouton ?
+  completion:
+  - internal
 - title: Et ensuite ?

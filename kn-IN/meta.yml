@@ -20,14 +20,16 @@ last_tested: 2017-01-01
 steps:
 - title: ಪರಿಚಯ
 - title: ನಿಮಗೆ ಬೇಕಾದುದು
-  completion: engaged
 - title: ದೀಪಗಳನ್ನು ಆರಿಸುವ ಆಟ (ಲೈಟ್ಸ್ ಔಟ್)!
 - title: 'ಪೂರ್ವ ಸಿದ್ಧತೆ '
+  completion:
+  - engaged
 - title: 'ದೀಪಗಳನ್ನು ಹಚ್ಚುವುದು... (ದೀಪಗಳನ್ನುಆನ್ ಮಾಡುವುದು) '
 - title: Random ಗ್ರಂಥಾಲಯವನ್ನು ಬಳಸುವುದು
 - title: ಗುಂಡಿಯನ್ನು ಒತ್ತುವುದು
 - title: ಸಾಕಷ್ಟು ದೀಪಗಳು!
 - title: ಟೈಮರ್ ಅನ್ನು ಸೇರಿಸುವ ವಿಧಾನ
-  completion: internal
 - title: ಆದರೆ ಅದು ಸರಿಯಾದ ಗುಂಡಿಯೇ?
+  completion:
+  - internal
 - title: ಮುಂದೆ ಏನು?

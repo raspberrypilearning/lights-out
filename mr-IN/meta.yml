@@ -20,14 +20,16 @@ last_tested: 2017-01-01
 steps:
 - title: परिचय
 - title: तुम्हाला कशाची आवश्यकता लागेल
-  completion: engaged
 - title: दिवे बंद!
 - title: 'उभारणे '
+  completion:
+  - engaged
 - title: 'दिवे चालू करणे '
 - title: अनियमित लायब्ररी वापरणे
 - title: बटण दाबणे
 - title: खूप सारे दिवे!
 - title: टाइमर जोडणे
-  completion: internal
 - title: पण ते बटन बरोबर होते का?
+  completion:
+  - internal
 - title: पुढे काय?
